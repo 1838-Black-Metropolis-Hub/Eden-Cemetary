@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eden Cemetery — Short Tour (Self-Guided Walk)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="./tour-data.js"></script>
+<style>
+  :root{--ink:#1B1712;--char:#1C1B19;--gold:#EFC94C;--golddk:#8A6D12;--cream:#F5F4F0;--panel:#FFFFFF;--line:#DDDAD0;--body:#4A4438;--mute:#6E6759;--dline:#3A3833;--dmute:#CFCCC4}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font-family:'Instrument Sans',system-ui,sans-serif;background:var(--cream);color:var(--ink);-webkit-text-size-adjust:100%}
+  a{color:var(--golddk);text-decoration:none}a:hover{color:var(--gold)}
+  #app{display:flex;flex-direction:column;min-height:100%;height:100dvh}
+  header{background:var(--char);color:#F6F4EA;padding:12px 16px;display:flex;align-items:center;gap:14px;border-bottom:1px solid var(--dline);flex:0 0 auto}
+  header h1{font-family:'Bricolage Grotesque',sans-serif;font-size:16px;margin:0;font-weight:600;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+  header h1 b{color:var(--gold);font-weight:600}
+  header .sub{white-space:nowrap;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dmute)}
+  header nav{margin-left:auto;display:flex;gap:14px}
+  header nav a{color:var(--gold);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+  #prog{background:var(--panel);border-bottom:1px solid var(--line);padding:10px 16px 0;flex:0 0 auto}
+  #prog .row{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  #prog .stop{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:15px;letter-spacing:.02em;white-space:nowrap;flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
+  #prog .stop small{font-weight:500;color:var(--mute);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-left:8px}
+  #prog .cnt{white-space:nowrap;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+  #segs{display:flex;gap:3px;margin-top:8px;height:4px}
+  #segs i{flex:1;background:var(--line);display:block}#segs i.done{background:var(--golddk)}#segs i.cur{background:var(--gold)}
+  #body{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+  #mapwrap{position:relative;flex:0 0 40dvh;min-height:220px;background:#EFEDE6;border-bottom:1px solid var(--line)}
+  #map{position:absolute;inset:0}
+  .leaflet-container{background:#EFEDE6;font-family:'Instrument Sans',sans-serif}
+  .leaflet-image-layer{filter:grayscale(1) contrast(1.25) brightness(1.06);opacity:.85}
+  .leaflet-control-zoom a{border-radius:0!important;color:var(--ink)!important;border-color:var(--line)!important}
+  .leaflet-bar{border:1px solid var(--line)!important;box-shadow:none!important}
+  .seclab{display:flex;align-items:flex-start;justify-content:center;pointer-events:none;overflow:visible}
+  .secunit{display:flex;align-items:center;gap:6px;transform:translateY(24px);white-space:nowrap;pointer-events:auto}
+  .secunit span{font-family:'Bricolage Grotesque',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--mute);text-shadow:0 0 3px #F5F4F0,0 0 6px #F5F4F0}
+  .secunit.cur span{color:var(--char);font-size:12px;background:var(--gold);padding:4px 9px;text-shadow:none;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+  .stopn{display:inline-block;padding:5px 9px;background:var(--char);border:1.5px solid var(--char);color:var(--gold);font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:11px;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;font-style:normal;line-height:1;box-shadow:0 1px 4px rgba(0,0,0,.35)}
+  .stopn.cur{background:var(--gold);border-color:var(--char);color:var(--char);font-size:13px;padding:6px 11px}
+  .stopn.done{opacity:.8}
+  .leaflet-tooltip.name{font-family:'Instrument Sans',sans-serif;font-size:11px;font-weight:600;letter-spacing:.04em;background:var(--char);color:#F6F4EA;border:0;border-radius:0;box-shadow:none;padding:3px 7px;white-space:nowrap}
+  .leaflet-tooltip-top.name:before{border-top-color:var(--char)}
+  .leaflet-tooltip.name.faint{background:#FFFFFFEE;color:var(--body);font-weight:500}
+  .leaflet-tooltip-top.name.faint:before{border-top-color:#FFFFFFEE}
+  #locate{white-space:nowrap;position:absolute;right:10px;bottom:10px;z-index:900;display:flex;align-items:center;gap:7px;background:var(--panel);border:1px solid var(--line);padding:8px 11px;font:600 11px/1 'Instrument Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);cursor:pointer;min-height:36px}
+  #locate.on{background:var(--char);color:var(--gold);border-color:var(--char)}
+  #locate svg{width:13px;height:13px;flex:0 0 auto}
+  #toast{position:absolute;left:10px;right:10px;bottom:54px;z-index:900;background:var(--char);color:#F6F4EA;font-size:12px;padding:9px 12px;display:none;line-height:1.4}
+  .you{width:16px;height:16px;border-radius:50%;background:#2F6FE4;border:3px solid #fff;box-shadow:0 0 0 2px #2F6FE4,0 0 0 8px rgba(47,111,228,.2)}
+  .note{white-space:nowrap;position:absolute;left:10px;bottom:10px;z-index:800;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);background:rgba(245,244,240,.9);border:1px solid var(--line);padding:3px 6px;pointer-events:none}
+  #side{flex:1 1 auto;min-height:0;min-width:0;display:flex;flex-direction:column}
+  #warn{flex:0 0 auto;display:flex;align-items:center;gap:10px;padding:8px 18px;background:#FFF3C4;border-bottom:1px solid #E6D48A;color:#1B1712;font-size:12px;line-height:1.35}
+  #panel{flex:1 1 auto;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;padding:20px 18px 26px;background:var(--cream)}
+  #panel .lab{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--golddk);font-weight:600}
+  #panel h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:24px;line-height:1.15;margin:8px 0 14px;letter-spacing:-.005em;text-wrap:pretty}
+  #panel p{font-size:16px;line-height:1.65;color:var(--body);margin:0 0 14px;text-wrap:pretty}
+  #panel p:last-of-type{margin-bottom:0}
+  #people{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 18px}
+  #people:empty{display:none}
+  #people a{display:flex;flex-direction:column;gap:6px;width:112px;color:var(--ink);text-decoration:none}
+  #people a img{width:112px;height:136px;object-fit:cover;object-position:center 20%;display:block;background:#E6E3D8;border:1px solid var(--line);filter:grayscale(.15) sepia(.12) contrast(1.05)}
+  #people a img.none{display:none}
+  #people a span{font-size:12px;line-height:1.3;font-weight:600;letter-spacing:.01em}
+  #people a small{display:block;font-weight:500;color:var(--mute);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+  #people a:hover img{border-color:var(--golddk)}
+  #nav{flex:0 0 auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--char);border-top:1px solid var(--dline)}
+  #nav button{appearance:none;border:1.5px solid var(--gold);background:transparent;color:var(--gold);font:600 12px/1 'Instrument Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:0 16px;min-height:46px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}
+  #nav button#next{background:var(--gold);color:var(--char)}
+  #nav button:disabled{opacity:.3;cursor:default}
+  #nav .pos{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dmute);text-align:center;white-space:nowrap}
+  #nav .pos b{color:#F6F4EA;font-weight:600}
+  @media(min-width:900px){
+    #body{flex-direction:row}
+    #mapwrap{flex:0 0 52%;min-height:0;border-bottom:0;border-right:1px solid var(--line)}
+    #side{flex:1 1 auto}
+    #warn{padding:10px 48px}
+    #panel{padding:32px 48px 48px;max-width:760px}
+    #panel h2{font-size:32px}#panel p{font-size:17px}
+    header h1{font-size:19px}
+  }
+  @media(max-width:1000px){header .sub{display:none}}
+</style>
+</head>
+<body>
+<div id="app">
+<header>
+  <h1>Eden <b>Cemetery</b></h1>
+  <span class="sub">Short Tour &middot; Self-Guided Walk</span>
+  <nav><a href="./tour-short-print.html">Print sheet</a><a href="./index.html">Site</a></nav>
+</header>
+<div id="prog"><div class="row"><span class="stop" id="stopName"></span><span class="cnt" id="stopCnt"></span></div><div id="segs"></div></div>
+<div id="body">
+  <div id="mapwrap">
+    <div id="map"></div>
+    <button id="locate" type="button" aria-pressed="false"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="10" r="6"/><circle cx="10" cy="10" r="1.5" fill="currentColor"/><path d="M10 1v3M10 16v3M1 10h3M16 10h3"/></svg><span>Where am I?</span></button>
+    <div id="toast"></div>
+    <div class="note">Plan view · approximate</div>
+  </div>
+  <div id="side">
+  <div id="warn"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#1B1712" stroke-width="1.6" aria-hidden="true" style="flex:0 0 auto"><path d="M8 1.5 14.5 13.5H1.5Z" stroke-linejoin="round"/><path d="M8 6v3.5M8 11.5v.5"/></svg><span><b>Uneven ground.</b> Proceed into the lots with caution.</span></div>
+  <div id="panel">
+    <div class="lab" id="lab"></div>
+    <h2 id="ttl"></h2>
+    <div id="people"></div>
+    <div id="txt"></div>
+  </div>
+  </div>
+</div>
+<div id="nav">
+  <button id="prev" type="button">&larr; Back</button>
+  <span class="pos"><b id="pn"></b> / <span id="pt"></span></span>
+  <button id="next" type="button">Next &rarr;</button>
+</div>
+</div>
+<script>
+const T=window.TOURS['short'], SEC=window.TOUR_SECTIONS, PL=window.TOUR_PLAN, PEO=Object.fromEntries(window.TOUR_PEOPLE.map(p=>[p.id,p]));
+const KEY='eden-tour-short-idx';
+const N=T.panels.length, nStops=Math.max(...T.panels.map(p=>p.stop));
+let idx=0; { const h=parseInt(location.hash.slice(1),10); const s=parseInt(localStorage.getItem(KEY),10); idx=(h>=1&&h<=N)?h-1:(s>=0&&s<N?s:0); }
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const xy=(x,y)=>[PL.h-y,x]; // plan px -> Leaflet CRS.Simple latlng (y flipped)
+const toPlan=(lat,lng)=>[PL.ax[0]*lat+PL.ax[1]*lng+PL.ax[2], PL.ay[0]*lat+PL.ay[1]*lng+PL.ay[2]];
+const cen=q=>q.reduce((a,p)=>[a[0]+p[0]/q.length,a[1]+p[1]/q.length],[0,0]);
+const map=L.map('map',{crs:L.CRS.Simple,minZoom:-2.5,maxZoom:1.5,zoomSnap:.25,zoomDelta:.5,attributionControl:false,zoomControl:false});
+L.control.zoom({position:'topright'}).addTo(map);
+map.createPane('stops'); map.getPane('stops').style.zIndex=660; // above tooltips (650) so badges are never covered
+const B=[[0,0],[PL.h,PL.w]];
+L.imageOverlay('assets/plan-base.png',B).addTo(map); map.setMaxBounds([[-500,-500],[PL.h+500,PL.w+500]]);
+const secLayer={}, secMk={};
+const stopsOf=name=>T.stops.map((s,i)=>s===name?i+1:0).filter(Boolean);
+function labelHtml(name,curStop){
+  const ns=stopsOf(name), isCur=ns.includes(curStop);
+  const badges=ns.map(n=>'<b class="stopn'+(n===curStop?' cur':n<curStop?' done':'')+'" data-stop="'+n+'">Stop '+n+'</b>').join('');
+  return ns.length?'<div class="secunit'+(isCur?' cur':'')+'">'+badges+'</div>':'';
+}
+for(const [name,q] of Object.entries(SEC)){
+  secLayer[name]=L.polygon(q.map(p=>xy(p[0],p[1])),{stroke:false,fill:false,interactive:false}).addTo(map);
+  const c=cen(q), isStop=stopsOf(name).length>0;
+  secMk[name]=L.marker(xy(c[0],c[1]),{icon:L.divIcon({className:'seclab',html:labelHtml(name,0)}),pane:isStop?'stops':'markerPane',interactive:isStop,zIndexOffset:isStop?500:0}).addTo(map);
+  if(isStop) secMk[name].on('click',e=>{const b=e.originalEvent&&e.originalEvent.target.closest('.stopn'); const n=b?+b.dataset.stop:stopsOf(name)[0]; const k=T.panels.findIndex(p=>p.stop===n); if(k>=0)go(k);});
+}
+// walking route along the drawn roads: faint full route + bold leg to the current stop
+const RT=window.TOUR_ROUTES['short'];
+let pins=L.layerGroup().addTo(map), cur=null;
+function render(){
+  const p=T.panels[idx];
+  document.getElementById('lab').textContent=p.label;
+  document.getElementById('ttl').textContent=p.title;
+  document.getElementById('txt').innerHTML=p.text.map(t=>'<p>'+esc(t)+'</p>').join('');
+  const pe=document.getElementById('people'); pe.innerHTML='';
+  document.getElementById('stopName').innerHTML=p.stop?('Stop '+p.stop+'<small>'+esc(p.sec)+'</small>'):(idx===0?'Start':(p.sec?'<small>'+esc(p.sec)+'</small>':''));
+  document.getElementById('stopCnt').textContent=p.stop?('of '+nStops+' stops'):'';
+  document.getElementById('segs').innerHTML=Array.from({length:N},(_,i)=>'<i class="'+(i<idx?'done':i===idx?'cur':'')+'"></i>').join('');
+  document.getElementById('pn').textContent=idx+1; document.getElementById('pt').textContent=N;
+  document.getElementById('prev').disabled=idx===0; document.getElementById('next').disabled=idx===N-1;
+  // map: highlight section
+    cur=p.sec;
+  for(const name of Object.keys(secMk)) if(stopsOf(name).length) secMk[name].setIcon(L.divIcon({className:'seclab',html:labelHtml(name,p.stop)}));
+  for(const name of Object.keys(secMk)) secMk[name].setZIndexOffset(name===cur?2000:stopsOf(name).length?500:0);
+  pins.clearLayers();
+  if(cur&&secLayer[cur]){
+        // merge graves within 25 plan-px into one pin with a combined label; alternate label direction otherwise
+    const groups=[];
+    for(const id of p.people){const q=PEO[id]; if(!q)continue; const g=groups.find(g=>Math.hypot(g.x-q.bx,g.y-q.by)<60); if(g)g.list.push(q); else groups.push({x:q.bx,y:q.by,list:[q]});}
+    const dirs=['top','bottom','right','left'];
+    groups.forEach((g,i)=>{const d=dirs[i%dirs.length], off={top:[0,-6],bottom:[0,6],right:[8,0],left:[-8,0]}[d];
+      L.circleMarker(xy(g.x,g.y),{radius:6,weight:2,color:'#1C1B19',fillColor:'#EFC94C',fillOpacity:1}).bindTooltip(g.list.map(q=>short(q.n)).join(' · '),{permanent:true,direction:d,offset:off,className:'name'}).addTo(pins);});
+    for(const id of p.people){const q=PEO[id]; if(!q)continue;
+      if(!q.pic)continue;
+      const a=document.createElement('a'); a.href='./eden-map.html?name='+encodeURIComponent(q.n); a.target='_blank'; a.rel='noopener';
+      a.innerHTML='<img loading="lazy" alt="" src="'+esc(q.pic)+'" onerror="this.parentElement.remove()"><span>'+esc(q.n)+(q.lot?'<small>Lot '+esc(q.lot)+'</small>':'')+'</span>'; pe.appendChild(a);
+    }
+    const pad=window.innerWidth<900?[24,24]:[60,60];
+    let bb=secLayer[cur].getBounds(); pins.eachLayer(m=>bb=bb.extend(m.getLatLng()));
+    map.flyToBounds(bb,{padding:pad,maxZoom:.5,duration:.7});
+  } else {
+    map.flyToBounds(B,{padding:[8,8],duration:.7});
+  }
+  document.getElementById('panel').scrollTop=0;
+  localStorage.setItem(KEY,idx); history.replaceState(null,'','#'+(idx+1));
+}
+function short(n){return n.replace(/^(Dr|Rev|Bishop|Hon)\.\s+/,'').replace(/^Rev\.\s+/,'');}
+function go(i){ idx=Math.max(0,Math.min(N-1,i)); render(); }
+document.getElementById('prev').onclick=()=>go(idx-1); document.getElementById('next').onclick=()=>go(idx+1);
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(idx+1); if(e.key==='ArrowLeft')go(idx-1);});
+// swipe on the text panel
+let sx=null,sy=null; const pnl=document.getElementById('panel');
+pnl.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
+pnl.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;sx=null;if(Math.abs(dx)>70&&Math.abs(dy)<50)go(idx+(dx<0?1:-1));});
+// GPS
+let watch=null, you=null; const btn=document.getElementById('locate'), toast=document.getElementById('toast');
+function say(m,ms=3500){toast.textContent=m;toast.style.display='block';clearTimeout(say.t);say.t=setTimeout(()=>toast.style.display='none',ms);}
+btn.onclick=()=>{
+  if(watch!==null){navigator.geolocation.clearWatch(watch);watch=null;btn.classList.remove('on');btn.setAttribute('aria-pressed','false');if(you){map.removeLayer(you);you=null;}return;}
+  if(!navigator.geolocation){say('Location is not available on this device.');return;}
+  btn.classList.add('on');btn.setAttribute('aria-pressed','true');say('Finding you…',2000);
+  watch=navigator.geolocation.watchPosition(pos=>{
+    const [x,y]=toPlan(pos.coords.latitude,pos.coords.longitude);
+    const inside=x>-80&&x<PL.w+80&&y>-80&&y<PL.h+80;
+    if(!inside){say('You don’t appear to be at Eden yet. The dot will show once you arrive.',5000);if(you){map.removeLayer(you);you=null;}return;}
+    const ll=xy(x,y);
+    if(!you) you=L.marker(ll,{icon:L.divIcon({className:'',iconSize:[16,16],iconAnchor:[8,8],html:'<div class="you"></div>'}),interactive:false,zIndexOffset:1000}).addTo(map); else you.setLatLng(ll);
+  },err=>{say(err.code===1?'Location permission was denied.':'Could not get your location.');btn.classList.remove('on');watch=null;},{enableHighAccuracy:true,maximumAge:5000,timeout:15000});
+};
+map.fitBounds(B); render();
+window.addEventListener('resize',()=>{map.invalidateSize();});
+</script>
+</body>
+</html>
