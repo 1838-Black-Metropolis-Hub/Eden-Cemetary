@@ -1021,7 +1021,7 @@
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440},&quot;charcoal&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;options&quot;:[&quot;#1C1B19&quot;,&quot;#26241F&quot;,&quot;#302E28&quot;,&quot;#3C3A32&quot;,&quot;#4F4F42&quot;,&quot;#686858&quot;],&quot;default&quot;:&quot;#3C3A32&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;gold&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;options&quot;:[&quot;#EFC94C&quot;,&quot;#D9A821&quot;,&quot;#B5891A&quot;],&quot;default&quot;:&quot;#D9A821&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;showFriends&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Pages&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440},&quot;charcoal&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;options&quot;:[&quot;#1C1B19&quot;,&quot;#26241F&quot;,&quot;#302E28&quot;,&quot;#3C3A32&quot;,&quot;#4F4F42&quot;,&quot;#686858&quot;],&quot;default&quot;:&quot;#26241F&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;gold&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;options&quot;:[&quot;#EFC94C&quot;,&quot;#D9A821&quot;,&quot;#B5891A&quot;],&quot;default&quot;:&quot;#D9A821&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;showFriends&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Pages&quot;}}">
 class Component extends DCLogic {
   state = { page: 'home', menuOpen: false, openPress: {}, mob: false, videoOn: false, people: [], groups: {}, cat: 'all', dq: '', showAll: false, notables: [], dirCats: [], dirCat: 'All', dirQuery: '' };
 
@@ -1177,7 +1177,7 @@ class Component extends DCLogic {
   renderVals() {
     const page = this.state.page;
     const gold = this.props.gold ?? '#D9A821';
-    const charcoal = this.props.charcoal ?? '#3C3A32';
+    const charcoal = this.props.charcoal ?? '#26241F';
 
     // Derived shades for each charcoal option
     const shades = {
