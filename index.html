@@ -671,7 +671,7 @@
               <a href="./tour-short.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1.5px solid #1B1712;color:#1B1712;text-decoration:none;min-height:44px" style-hover="background:#1B1712;color:#EFC94C"><span style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">Short Tour · 4 stops</span><span aria-hidden="true">→</span></a>
               <a href="./tour-long.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1.5px solid #1B1712;color:#1B1712;text-decoration:none;min-height:44px" style-hover="background:#1B1712;color:#EFC94C"><span style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">Full Tour · 8 stops</span><span aria-hidden="true">→</span></a>
             </div>
-            <div style="display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;letter-spacing:0.08em;text-transform:uppercase"><span style="color:#6E6759">Printable route sheets:</span><a href="./tour-short-print.html" style="color:#8A6D12;font-weight:600;text-decoration:none">Short</a><a href="./tour-long-print.html" style="color:#8A6D12;font-weight:600;text-decoration:none">Full</a></div>
+            <div style="display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;letter-spacing:0.08em;text-transform:uppercase"><span style="color:#6E6759">Print the tour:</span><a href="./tour-short-print.html" style="color:#8A6D12;font-weight:600;text-decoration:none">Short</a><a href="./tour-long-print.html" style="color:#8A6D12;font-weight:600;text-decoration:none">Full</a></div>
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:14px">
@@ -1106,6 +1106,8 @@ class Component extends DCLogic {
 
   componentDidMount() {
     window.__eden = this;
+    this._onHash = () => { const k = location.hash.slice(1); if (['home','history','notables','jubilee','map','lots','services','friends','contact'].includes(k)) this.go(k); };
+    this._onHash(); window.addEventListener('hashchange', this._onHash);
     this.loadPeople();
     this._kmRO = new ResizeObserver(() => this.fitKidsPreview()); this._kmRO.observe(document.body);
     import('./notables-data.js')

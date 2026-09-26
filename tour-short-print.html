@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eden Cemetery — Short Tour route sheet</title>
+<title>Eden Cemetery — Short Tour printable tour</title>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -21,11 +21,39 @@
   *{box-sizing:border-box;}
   doc-page:not(:defined){visibility:hidden}
   @media print{.noprint{display:none!important}}
+.sh{background:#1C1B19;border-bottom:1px solid #3A3833;font-family:'Instrument Sans',sans-serif;position:relative;z-index:1200}
+.sh-in{max-width:1280px;margin:0 auto;padding:14px clamp(16px,4vw,40px);display:flex;align-items:center;justify-content:space-between;min-height:88px;gap:14px 32px}
+.sh-logo{flex:0 0 auto;display:flex;flex-direction:column;line-height:1;text-decoration:none}
+.sh-name{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(23px,4vw,30px);letter-spacing:.04em;color:#F6F4EA}
+.sh-name b{color:#EFC94C;font-weight:600}
+.sh-tag{white-space:nowrap;font-size:10.5px;letter-spacing:.32em;color:#99968E;margin-top:5px;text-transform:uppercase}
+.sh-nav{display:flex;align-items:center;gap:12px clamp(14px,2.5vw,34px);flex-wrap:wrap}
+.sh-nav a,.sh-mnav a{white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:.06em;color:#CFCCC4;text-decoration:none}
+.sh-nav a:hover,.sh-mnav a:hover,.sh a.on{color:#EFC94C}
+.sh a.sh-cta{display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#33301F;background:#EFC94C;padding:12px 22px}
+.sh a.sh-cta:hover{background:#EFC94C;color:#33301F}
+.sh-menu{display:none}
+.sh-menu summary{list-style:none;display:inline-flex;align-items:center;gap:10px;border:1px solid #3A3833;color:#F6F4EA;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:12px 14px;cursor:pointer;min-height:44px}
+.sh-menu summary::-webkit-details-marker{display:none}
+.sh-menu summary i{display:flex;flex-direction:column;gap:4px;width:18px}.sh-menu summary i:before,.sh-menu summary i:after,.sh-menu summary i b{content:"";height:2px;background:currentColor;display:block}
+.sh-mnav{position:absolute;left:0;right:0;top:100%;display:flex;flex-direction:column;padding:6px clamp(16px,4vw,40px) 24px;background:#131211;border-top:1px solid #3A3833}
+.sh-mnav a{font-size:17px;letter-spacing:.04em;padding:14px 0;border-bottom:1px solid #3A3833}
+.sh-mnav a.sh-cta{margin-top:10px;padding:16px 22px;border:0}
+@media(max-width:1080px){.sh-nav{display:none}.sh-menu{display:block}}
+.sf{background:#131211;color:#CFCCC4;border-top:1px solid #3A3833;font-family:'Instrument Sans',sans-serif}
+.sf-in{max-width:1280px;margin:0 auto;padding:clamp(44px,7vw,72px) clamp(20px,5vw,40px) 40px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px 48px}
+.sf-col{display:flex;flex-direction:column;gap:12px;font-size:14px}
+.sf-col:first-child{gap:16px}
+.sf h4{margin:0;font-weight:400;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:#EFC94C}
+.sf a{color:#CFCCC4;text-decoration:none}.sf a:hover{color:#EFC94C}
+.sf-bar{max-width:1280px;margin:0 auto;padding:24px clamp(20px,5vw,40px) 36px;display:flex;justify-content:space-between;gap:24px;border-top:1px solid #3A3833;font-size:12px;color:#99968E;flex-wrap:wrap}
+@media(max-width:1080px){.sf-in{grid-template-columns:1fr}}
+@media print{.sh,.sf{display:none!important}}
 </style>
 </helmet>
-<a class="noprint" href="./tour-short.html" style="position:fixed;top:14px;left:14px;z-index:1000;display:inline-flex;align-items:center;gap:8px;padding:11px 16px;background:#1B1712;color:#EFC94C;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;min-height:44px;box-shadow:0 2px 8px rgba(0,0,0,.25)">&larr; Back to tour</a>
+<header class="sh noprint"><div class="sh-in"><a class="sh-logo" href="./index.html"><span class="sh-name">EDEN <b>CEMETERY</b></span><span class="sh-tag">Historic · Est. 1902 · Collingdale, PA</span></a><nav class="sh-nav"><a href="./index.html#home">Home</a><a href="./index.html#history">History</a><a href="./index.html#notables">Notable Residents</a><a href="./index.html#jubilee">For Kids</a><a href="./index.html#map" class="on">Map &amp; Tours</a><a href="./index.html#lots">Find a Lot</a><a href="./index.html#services">Cemetery Services</a><a href="./index.html#friends">Friends of Eden</a><a class="sh-cta" href="./index.html#contact">Contact Us</a></nav><details class="sh-menu"><summary><i><b></b></i><span>Menu</span></summary><nav class="sh-mnav"><a href="./index.html#home">Home</a><a href="./index.html#history">History</a><a href="./index.html#notables">Notable Residents</a><a href="./index.html#jubilee">For Kids</a><a href="./index.html#map" class="on">Map &amp; Tours</a><a href="./index.html#lots">Find a Lot</a><a href="./index.html#services">Cemetery Services</a><a href="./index.html#friends">Friends of Eden</a><a class="sh-cta" href="./index.html#contact">Contact Us</a></nav></details></div></header><div class="noprint" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:16px clamp(16px,4vw,40px) 0;background:#f5f5f4"><a href="./tour-short.html" style="display:inline-flex;align-items:center;gap:8px;padding:11px 16px;background:#1B1712;color:#EFC94C;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;min-height:44px;box-shadow:0 2px 8px rgba(0,0,0,.25)">&larr; Back to tour</a><button class="noprint" type="button" onclick="window.print()" style="display:inline-flex;align-items:center;gap:8px;padding:11px 16px;background:#EFC94C;color:#1B1712;border:0;cursor:pointer;font-family:inherit;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;min-height:44px;box-shadow:0 2px 8px rgba(0,0,0,.25)">Download PDF &darr;</button></div>
 <doc-page orientation="landscape" size="letter">
-  <section class="page" data-screen-label="Short Tour route sheet" style="background:#FFFFFF;padding:0.38in 0.45in 0.34in;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;row-gap:0.14in;font-size:9pt;line-height:1.4">
+  <section class="page" data-screen-label="Short Tour printable tour" style="background:#FFFFFF;padding:0.38in 0.45in 0.34in;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;row-gap:0.14in;font-size:9pt;line-height:1.4">
     <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:0.3in;border-bottom:2px solid #1B1712;padding-bottom:0.1in">
       <div style="display:flex;flex-direction:column;gap:0.04in">
         <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:24pt;line-height:1;letter-spacing:-0.01em">Eden Cemetery <span style="color:#8A6D12;font-weight:500">· Self-Guided Walk</span></span>
@@ -44,39 +72,39 @@
       <div style="position:relative;border:1px solid #DDDAD0;background:#F5F4F0;flex:1 1 auto;min-height:0;display:flex;justify-content:center;max-width:100%">
         <div style="position:relative;height:100%;max-width:100%;aspect-ratio:1852/856">
           <img src="assets/plan-base.png" alt="Eden Cemetery plan" style="position:absolute;inset:0;width:100%;height:100%;display:block;filter:grayscale(1) contrast(1.25) brightness(1.06);opacity:.8">
-          <svg viewBox="0 0 1852 856" style="position:absolute;inset:0;width:100%;height:100%" aria-label="Route with numbered stops"><rect x="416" y="290.35" width="100" height="32" fill="#1B1712"/><text x="466" y="313.35" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="600" font-size="19" letter-spacing="3" fill="#EFC94C">STOP 1</text><rect x="245" y="619.8499999999999" width="100" height="32" fill="#1B1712"/><text x="295" y="642.8499999999999" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="600" font-size="19" letter-spacing="3" fill="#EFC94C">STOP 2</text><rect x="632" y="565.325" width="100" height="32" fill="#1B1712"/><text x="682" y="588.325" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="600" font-size="19" letter-spacing="3" fill="#EFC94C">STOP 3</text><rect x="830" y="580.1666666666666" width="100" height="32" fill="#1B1712"/><text x="880" y="603.1666666666666" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="600" font-size="19" letter-spacing="3" fill="#EFC94C">STOP 4</text><circle cx="738.4" cy="503.1" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="776.3" cy="605.5" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="1619.5" cy="605.8" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="903.6" cy="689.8" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="783.8" cy="670.3" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="751.4" cy="502.3" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="776.3" cy="605.5" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/></svg>
+          <svg viewBox="0 0 1852 856" style="position:absolute;inset:0;width:100%;height:100%" aria-label="Route with numbered stops"><rect x="416" y="290.35" width="100" height="32" fill="#1B1712"/><text x="466" y="313.35" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="600" font-size="19" letter-spacing="3" fill="#EFC94C">STOP 1</text><rect x="245" y="619.8499999999999" width="100" height="32" fill="#1B1712"/><text x="295" y="642.8499999999999" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="600" font-size="19" letter-spacing="3" fill="#EFC94C">STOP 2</text><rect x="632" y="565.325" width="100" height="32" fill="#1B1712"/><text x="682" y="588.325" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="600" font-size="19" letter-spacing="3" fill="#EFC94C">STOP 3</text><rect x="830" y="580.1666666666666" width="100" height="32" fill="#1B1712"/><text x="880" y="603.1666666666666" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="600" font-size="19" letter-spacing="3" fill="#EFC94C">STOP 4</text><circle cx="738.4" cy="503.1" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="776.3" cy="605.5" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="1619.5" cy="605.8" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="903.6" cy="689.8" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="783.8" cy="670.3" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="751.4" cy="502.3" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="776.3" cy="605.5" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="496.5" cy="472.1" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="362.7" cy="622.2" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/><circle cx="329.7" cy="782.4" r="6" fill="#EFC94C" stroke="#1B1712" stroke-width="2"/></svg>
         </div>
         <span style="position:absolute;right:0.08in;top:0.06in;font-size:7pt;letter-spacing:.12em;text-transform:uppercase;color:#6E6759;background:rgba(245,244,240,.9);padding:2px 5px">Entrance: Springfield Road</span>
       </div>
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.06in 0.3in;font-size:7.8pt;color:#4A4438;align-items:center">
         <span style="display:inline-flex;align-items:center;gap:6px"><span style="display:inline-flex;align-items:center;padding:2px 5px;background:#1B1712;color:#EFC94C;font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:6.5pt;letter-spacing:.14em">STOP 1</span>Tour stop (a section, not a single grave)</span>
         <span style="display:inline-flex;align-items:center;gap:6px"><span style="width:0.12in;height:0.12in;border-radius:50%;background:#EFC94C;border:1.5px solid #1B1712"></span>Grave discussed on the walk</span>
-        <span style="color:#6E6759">Plan view · positions approximate</span>
+        
       </div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0.12in 0.22in;border-top:1px solid #DDDAD0;padding-top:0.12in"><div style="display:grid;grid-template-columns:1fr;row-gap:0.05in;align-content:start">
           <span style="display:inline-flex;align-items:center;justify-content:center;align-self:start;padding:3px 6px;background:#1B1712;color:#EFC94C;font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:7pt;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap">Stop 1</span>
           <div style="display:flex;flex-direction:column;gap:0.02in;padding-top:0.01in">
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:11pt;letter-spacing:.02em;line-height:1.15">Richard Allen</span>
-            <span style="font-size:8pt;line-height:1.36;color:#4A4438;text-wrap:pretty">Namesake of the section, not buried here. In 1787 Allen and Absalom Jones founded the Free African Society, making care for the sick and the dead a shared community duty.</span>
+            <span style="font-size:8pt;line-height:1.36;color:#4A4438;text-wrap:pretty">Namesake of the section, not buried here. In 1787 Allen and Absalom Jones founded the Free African Society, making care for the sick and the dead a shared community duty. <b style="color:#1B1712">Arizona Cleaver Stemons</b>, a founder of Zeta Phi Beta Sorority, Inc., is buried here.</span>
           </div>
         </div><div style="display:grid;grid-template-columns:1fr;row-gap:0.05in;align-content:start">
           <span style="display:inline-flex;align-items:center;justify-content:center;align-self:start;padding:3px 6px;background:#1B1712;color:#EFC94C;font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:7pt;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap">Stop 2</span>
           <div style="display:flex;flex-direction:column;gap:0.02in;padding-top:0.01in">
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:11pt;letter-spacing:.02em;line-height:1.15">Lehmann</span>
-            <span style="font-size:8pt;line-height:1.36;color:#4A4438;text-wrap:pretty">Named for Martin J. Lehmann, cigar maker and treasurer of the Eden Cemetery Company — one of the five founders who secured land, records, and the cemetery’s future.</span>
+            <span style="font-size:8pt;line-height:1.36;color:#4A4438;text-wrap:pretty">Named for Martin J. Lehmann, cigar maker and treasurer of the Eden Cemetery Company — one of the five founders who secured land, records, and the cemetery’s future. Note architect <b style="color:#1B1712">Julian Abele</b> and <b style="color:#1B1712">Pauline Oberdorfer Minor</b>, a founder of Delta Sigma Theta Sorority, Inc.</span>
           </div>
         </div><div style="display:grid;grid-template-columns:1fr;row-gap:0.05in;align-content:start">
           <span style="display:inline-flex;align-items:center;justify-content:center;align-self:start;padding:3px 6px;background:#1B1712;color:#EFC94C;font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:7pt;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap">Stop 3</span>
           <div style="display:flex;flex-direction:column;gap:0.02in;padding-top:0.01in">
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:11pt;letter-spacing:.02em;line-height:1.15">Lebanon</span>
-            <span style="font-size:8pt;line-height:1.36;color:#4A4438;text-wrap:pretty">Preserves the name of an 1849 Philadelphia cemetery condemned in 1899; thousands of remains came to Eden in 1903. James Forten, Octavius Catto, Caroline LeCount, William Still, Caroline Still Anderson.</span>
+            <span style="font-size:8pt;line-height:1.36;color:#4A4438;text-wrap:pretty">Preserves the name of an 1849 Philadelphia cemetery condemned in 1899; thousands of remains came to Eden in 1903. <b style="color:#1B1712">James Forten</b>, <b style="color:#1B1712">Octavius Catto</b>, <b style="color:#1B1712">Caroline LeCount</b>, <b style="color:#1B1712">William Still</b>, <b style="color:#1B1712">Caroline Still Anderson</b>.</span>
           </div>
         </div><div style="display:grid;grid-template-columns:1fr;row-gap:0.05in;align-content:start">
           <span style="display:inline-flex;align-items:center;justify-content:center;align-self:start;padding:3px 6px;background:#1B1712;color:#EFC94C;font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:7pt;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap">Stop 4</span>
           <div style="display:flex;flex-direction:column;gap:0.02in;padding-top:0.01in">
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:11pt;letter-spacing:.02em;line-height:1.15">John Brown</span>
-            <span style="font-size:8pt;line-height:1.36;color:#4A4438;text-wrap:pretty">Named for the abolitionist, who is not buried here. Frances Ellen Watkins Harper, poet and abolitionist, was buried in this section in 1911.</span>
+            <span style="font-size:8pt;line-height:1.36;color:#4A4438;text-wrap:pretty">Named for the abolitionist, who is not buried here. <b style="color:#1B1712">Frances Ellen Watkins Harper</b>, poet and abolitionist, was buried in this section in 1911.</span>
           </div>
         </div>
     </div>
@@ -86,6 +114,7 @@
     </div>
   </section>
 </doc-page>
+<footer class="sf noprint"><div class="sf-in"><div class="sf-col"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:26px;letter-spacing:.04em;color:#F6F4EA">EDEN <span style="color:#EFC94C">CEMETERY</span></span><span style="line-height:1.8">1434 Springfield Road<br>Collingdale, Pennsylvania 19023<br>610‑583‑8737</span><span style="font-size:12.5px;line-height:1.7;color:#99968E">A National Underground Railroad Network to Freedom site, listed on the National Register of Historic Places. Member, ASALH &amp; Pennsylvania Hallowed Grounds.</span></div><div class="sf-col"><h4>Our Story</h4><a href="./index.html#history">Beginnings · 1902</a><a href="./index.html#notables">Notable Residents</a><span>Lebanon &amp; Olive Reinterments</span><span>Eden Stories</span></div><div class="sf-col"><h4>Visit</h4><a href="./index.html#map">Grounds Map</a><a href="./index.html#map">Tours &amp; Events</a><span>Plan a Visit</span><span>Burial Records &amp; Research</span></div><div class="sf-col"><h4>Services &amp; Support</h4><a href="./index.html#services">Burial Options</a><a href="./index.html#services">Memorials &amp; Headstones</a><a href="./index.html#friends">Friends of Eden</a><a href="./index.html#contact">Contact Us</a></div></div><div class="sf-bar"><span>© 2026 Eden Cemetery Company. Preserving memory and cultural continuity since 1902.</span><span style="font-style:italic;font-family:'Bricolage Grotesque',sans-serif;font-size:15px">“History ignored is history repeated.”</span></div></footer>
 </x-dc>
 </body>
 </html>
