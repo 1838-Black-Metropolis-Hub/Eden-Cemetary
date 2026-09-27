@@ -32,15 +32,16 @@
         <span style="font-size:10.5px;letter-spacing:0.32em;color:{{ dsub }};margin-top:5px;text-transform:uppercase">Historic · Est. 1902 · Collingdale, PA</span>
       </div>
       <nav style="display:{{ navDeskDisplay }};align-items:center;gap:12px clamp(14px,2.5vw,34px);flex-wrap:wrap">
-        <span onClick="{{ goHome }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navHomeC }}" style-hover="color:#EFC94C">Home</span>
-        <span onClick="{{ goHistory }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navHistoryC }}" style-hover="color:#EFC94C">History</span>
-        <span onClick="{{ goNotables }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navNotablesC }}" style-hover="color:#EFC94C">Notable Residents</span>
-        <span onClick="{{ goJubilee }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navJubileeC }}" style-hover="color:#EFC94C">For Kids</span>
-        <span onClick="{{ goMap }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navMapC }}" style-hover="color:#EFC94C">Map &amp; Tours</span>
-        <span onClick="{{ goLots }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navLotsC }}" style-hover="color:#EFC94C">Find a Lot</span>
-        <span onClick="{{ goServices }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navServicesC }}" style-hover="color:#EFC94C">Cemetery Services</span>
-        <span onClick="{{ goFriends }}" style="display:{{ friendsDisplay }};cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navFriendsC }}" style-hover="color:#EFC94C">Friends of Eden</span>
-        <span onClick="{{ goContact }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#33301F;background:{{ gold }};padding:12px 22px;white-space:nowrap" style-hover="background:#EFC94C">Contact Us</span>
+        <span onClick="{{ goHome }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navHomeC }}" style-hover="color:{{ goldHi }}">Home</span>
+        <span onClick="{{ goHistory }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navHistoryC }}" style-hover="color:{{ goldHi }}">History</span>
+        <span onClick="{{ goMission }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navMissionC }}" style-hover="color:{{ goldHi }}">Mission &amp; Staff</span>
+        <span onClick="{{ goNotables }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navNotablesC }}" style-hover="color:{{ goldHi }}">Notable Residents</span>
+        <span onClick="{{ goJubilee }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navJubileeC }}" style-hover="color:{{ goldHi }}">For Kids</span>
+        <span onClick="{{ goMap }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navMapC }}" style-hover="color:{{ goldHi }}">Map &amp; Tours</span>
+        <span onClick="{{ goLots }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navLotsC }}" style-hover="color:{{ goldHi }}">Find a Lot</span>
+        <span onClick="{{ goServices }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navServicesC }}" style-hover="color:{{ goldHi }}">Cemetery Services</span>
+        <span onClick="{{ goFriends }}" style="display:{{ friendsDisplay }};cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navFriendsC }}" style-hover="color:{{ goldHi }}">Friends of Eden</span>
+        <span onClick="{{ goContact }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ goldText }};background:{{ gold }};padding:12px 22px;white-space:nowrap" style-hover="background:{{ goldHi }}">Contact Us</span>
       </nav>
       <button type="button" onClick="{{ toggleMenu }}" aria-label="{{ menuLabel }}" aria-expanded="{{ menuOpen }}" style="display:{{ navMobDisplay }};align-items:center;gap:10px;background:transparent;border:1px solid {{ dline }};color:#F6F4EA;font-family:'Instrument Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;padding:12px 14px;cursor:pointer;min-height:44px" style-hover="border-color:{{ gold }};color:{{ gold }}">
         <span style="display:flex;flex-direction:column;gap:4px;width:18px"><span style="height:2px;background:currentColor;display:block"></span><span style="height:2px;background:currentColor;display:block"></span><span style="height:2px;background:currentColor;display:block"></span></span>
@@ -48,15 +49,16 @@
       </button>
     </div>
     <nav style="display:{{ navPanelDisplay }};flex-direction:column;padding:6px clamp(16px,4vw,40px) 24px;background:{{ darker }};border-top:1px solid {{ dline }}">
-        <span onClick="{{ goHome }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navHomeC }}" style-hover="color:#EFC94C">Home</span>
-        <span onClick="{{ goHistory }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navHistoryC }}" style-hover="color:#EFC94C">History</span>
-        <span onClick="{{ goNotables }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navNotablesC }}" style-hover="color:#EFC94C">Notable Residents</span>
-        <span onClick="{{ goJubilee }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navJubileeC }}" style-hover="color:#EFC94C">For Kids</span>
-        <span onClick="{{ goMap }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navMapC }}" style-hover="color:#EFC94C">Map &amp; Tours</span>
-        <span onClick="{{ goLots }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navLotsC }}" style-hover="color:#EFC94C">Find a Lot</span>
-        <span onClick="{{ goServices }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navServicesC }}" style-hover="color:#EFC94C">Cemetery Services</span>
-        <span onClick="{{ goFriends }}" style="display:{{ friendsMobDisplay }};cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navFriendsC }}" style-hover="color:#EFC94C">Friends of Eden</span>
-        <span onClick="{{ goContact }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#33301F;background:{{ gold }};padding:16px 22px;margin-top:10px;text-align:center" style-hover="background:#EFC94C">Contact Us</span>
+        <span onClick="{{ goHome }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navHomeC }}" style-hover="color:{{ goldHi }}">Home</span>
+        <span onClick="{{ goHistory }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navHistoryC }}" style-hover="color:{{ goldHi }}">History</span>
+        <span onClick="{{ goMission }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navMissionC }}" style-hover="color:{{ goldHi }}">Mission &amp; Staff</span>
+        <span onClick="{{ goNotables }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navNotablesC }}" style-hover="color:{{ goldHi }}">Notable Residents</span>
+        <span onClick="{{ goJubilee }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navJubileeC }}" style-hover="color:{{ goldHi }}">For Kids</span>
+        <span onClick="{{ goMap }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navMapC }}" style-hover="color:{{ goldHi }}">Map &amp; Tours</span>
+        <span onClick="{{ goLots }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navLotsC }}" style-hover="color:{{ goldHi }}">Find a Lot</span>
+        <span onClick="{{ goServices }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navServicesC }}" style-hover="color:{{ goldHi }}">Cemetery Services</span>
+        <span onClick="{{ goFriends }}" style="display:{{ friendsMobDisplay }};cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navFriendsC }}" style-hover="color:{{ goldHi }}">Friends of Eden</span>
+        <span onClick="{{ goContact }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ goldText }};background:{{ gold }};padding:16px 22px;margin-top:10px;text-align:center" style-hover="background:{{ goldHi }}">Contact Us</span>
     </nav>
     <div style="display:none">
     </div>
@@ -69,6 +71,7 @@
     <!-- Hero banner -->
     <section style="position:relative;min-height:clamp(420px,90vw,640px);display:flex;align-items:flex-end;overflow:hidden;background:{{ dark }}">
       <img src="assets/hero-aerial.png" alt="Aerial drone view of Eden Cemetery grounds" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+      <video src="https://pub-868a2e756ea44cd3891475a39c5de8d4.r2.dev/Eden/Eden.mp4" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" preload="metadata" poster="assets/hero-aerial.png" data-hero-video="1" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:{{ heroVideoOpacity }};transition:opacity 1.2s ease"></video>
       <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(38,38,30,0.85) 0%, rgba(38,38,30,0.35) 45%, rgba(38,38,30,0.15) 100%)"></div>
       <div style="position:relative;max-width:1280px;margin:0 auto;width:100%;padding:clamp(48px,12vw,96px) clamp(20px,5vw,40px) 56px;display:flex;flex-direction:column;gap:24px">
         <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
@@ -78,8 +81,8 @@
         <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(36px,7.5vw,60px);line-height:1.06;margin:0;color:#FCFAF2;max-width:22ch;text-wrap:balance;text-shadow:0 2px 20px rgba(0,0,0,0.45)">Come sit with your ancestors.</h1>
         <p style="font-size:17px;line-height:1.7;color:rgba(252,250,242,0.92);margin:0;max-width:64ch;text-shadow:0 1px 12px rgba(0,0,0,0.5)">What if you could sit in the same space as Marian Anderson, Frances Watkins Harper, and William Still? Eden Cemetery is time travel — the past in the present. It is where 93,000 stories of ordinary people who did extraordinary things are waiting to be heard. Eden won’t let you forget.</p>
         <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:6px">
-          <span onClick="{{ goNotables }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;background:{{ gold }};color:#33301F;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px" style-hover="background:#EFC94C">Meet the Notables</span>
-          <span onClick="{{ goMap }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;border:1px solid rgba(252,250,242,0.7);color:#FCFAF2;font-weight:500;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;background:rgba(38,38,30,0.25);backdrop-filter:blur(4px)" style-hover="border-color:#EFC94C;color:#EFC94C">Explore the Grounds Map</span>
+          <span onClick="{{ goNotables }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;background:{{ gold }};color:{{ goldText }};font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px" style-hover="background:{{ goldHi }}">Meet the Notables</span>
+          <span onClick="{{ goMap }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;border:1px solid rgba(252,250,242,0.7);color:#FCFAF2;font-weight:500;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;background:rgba(38,38,30,0.25);backdrop-filter:blur(4px)" style-hover="border-color:{{ goldHi }};color:{{ goldHi }}">Explore the Grounds Map</span>
         </div>
       </div>
     </section>
@@ -91,6 +94,34 @@
         <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(28px,5.5vw,44px);font-weight:600;color:{{ gold }}">93,000</span><span style="font-size:13px;line-height:1.55;letter-spacing:0.04em;color:{{ dmute }}">Souls entrusted to Eden’s care</span></div>
         <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(28px,5.5vw,44px);font-weight:600;color:{{ gold }}">53</span><span style="font-size:13px;line-height:1.55;letter-spacing:0.04em;color:{{ dmute }}">Acres of Black-owned, Black-controlled sacred ground</span></div>
         <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(28px,5.5vw,44px);font-weight:600;color:{{ gold }}">2</span><span style="font-size:13px;line-height:1.55;letter-spacing:0.04em;color:{{ dmute }}">National designations: Register of Historic Places &amp; Underground Railroad Network to Freedom</span></div>
+      </div>
+    </section>
+
+    <!-- Notables preview -->
+    <section style="background:#EBE9E2;border-top:1px solid #DDDAD0">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px 40px;margin-bottom:52px;flex-wrap:wrap">
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Notable Residents</span>
+            <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(30px,6vw,46px);margin:0;line-height:1.1">From the ordinary to the extraordinary.</h2>
+          </div>
+          <span onClick="{{ goMap }}" style="cursor:pointer;font-size:14px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ goldInk }};border-bottom:2px solid {{ gold }};padding-bottom:6px;white-space:nowrap" style-hover="color:{{ gold }}">All Notable Residents →</span>
+        </div>
+        <div style="display:grid;grid-template-columns:{{ gCards }};gap:28px">
+          <sc-for list="{{ homeNotables }}" as="n" hint-placeholder-count="3">
+            <div onClick="{{ goNotables }}" style="cursor:pointer;background:#FFFFFF;border:1px solid #DDDAD0;display:flex;flex-direction:column" style-hover="border-color:{{ gold }}">
+              <div style="height:300px;background:{{ dark }};position:relative;overflow:hidden">
+                <div role="img" aria-label="{{ n.name }}" style="width:100%;height:100%;background-color:{{ n.bg }};background-image:url('{{ n.img }}');background-size:{{ n.zoom }};background-position:{{ n.pos }};background-repeat:no-repeat;filter:sepia(0.15)"></div>
+                <span style="position:absolute;bottom:0;left:0;right:0;padding:14px 20px;font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:19px;color:#FCFAF2;background:linear-gradient(to top, rgba(20,18,14,0.75), rgba(20,18,14,0))">{{ n.era }}</span>
+              </div>
+              <div style="padding:26px 26px 30px;display:flex;flex-direction:column;gap:10px">
+                <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:{{ goldInk }}">{{ n.tag }}</span>
+                <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(22px,4vw,28px);line-height:1.1">{{ n.name }}</span>
+                <span style="font-size:14.5px;line-height:1.65;color:#6E6759">{{ n.blurb }}</span>
+              </div>
+            </div>
+          </sc-for>
+        </div>
       </div>
     </section>
 
@@ -113,37 +144,20 @@
           <p style="margin:0">When Lebanon and Olive Cemeteries — home to Philadelphia’s Black citizens — were forced to close, Eden absorbed them all. It now holds the abolitionists who operated the Underground Railroad in plain sight, the ministers who built the first Black churches, the poets who told America it could not be free while it held people in chains, the architects who designed the buildings of elite American institutions, and the musicians who carried the sorrow and joy of a people to the world’s great stages.</p>
           <p style="margin:0">When you walk Eden’s 53 acres, you are not visiting a cemetery. You are time traveling through the foundation of Black American identity.</p>
           <div style="display:flex;gap:28px;margin-top:8px;flex-wrap:wrap">
-            <span style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#8A6D12;border-bottom:1px solid {{ gold }};padding-bottom:4px">History ignored is history repeated.</span>
-            <span style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#8A6D12;border-bottom:1px solid {{ gold }};padding-bottom:4px">Stories = History. Past = Now.</span>
+            <span style="font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:{{ goldInk }};border-bottom:1px solid {{ gold }};padding-bottom:4px">History ignored is history repeated.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Notables preview -->
-    <section style="background:#EBE9E2;border-top:1px solid #DDDAD0">
-      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px)">
-        <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px 40px;margin-bottom:52px;flex-wrap:wrap">
-          <div style="display:flex;flex-direction:column;gap:14px">
-            <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:#8A6D12">Notable Residents</span>
-            <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(30px,6vw,46px);margin:0;line-height:1.1">From the ordinary to the extraordinary.</h2>
-          </div>
-          <span onClick="{{ goMap }}" style="cursor:pointer;font-size:14px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#8A6D12;border-bottom:2px solid {{ gold }};padding-bottom:6px;white-space:nowrap" style-hover="color:#D9A821">All Notable Residents →</span>
-        </div>
-        <div style="display:grid;grid-template-columns:{{ gCards }};gap:28px">
-          <sc-for list="{{ homeNotables }}" as="n" hint-placeholder-count="3">
-            <div onClick="{{ goNotables }}" style="cursor:pointer;background:#FFFFFF;border:1px solid #DDDAD0;display:flex;flex-direction:column" style-hover="border-color:#D9A821">
-              <div style="height:300px;background:{{ dark }};position:relative;overflow:hidden">
-                <div role="img" aria-label="{{ n.name }}" style="width:100%;height:100%;background-color:{{ n.bg }};background-image:url('{{ n.img }}');background-size:{{ n.zoom }};background-position:{{ n.pos }};background-repeat:no-repeat;filter:sepia(0.15)"></div>
-                <span style="position:absolute;bottom:0;left:0;right:0;padding:14px 20px;font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:19px;color:#FCFAF2;background:linear-gradient(to top, rgba(20,18,14,0.75), rgba(20,18,14,0))">{{ n.era }}</span>
-              </div>
-              <div style="padding:26px 26px 30px;display:flex;flex-direction:column;gap:10px">
-                <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:#8A6D12">{{ n.tag }}</span>
-                <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(22px,4vw,28px);line-height:1.1">{{ n.name }}</span>
-                <span style="font-size:14.5px;line-height:1.65;color:#6E6759">{{ n.blurb }}</span>
-              </div>
-            </div>
-          </sc-for>
+    <!-- Designations -->
+    <section style="background:#FFFFFF;border-top:1px solid #DDDAD0;border-bottom:1px solid #DDDAD0">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(32px,5vw,52px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:24px;align-items:center">
+        <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }};text-align:center">Recognized &amp; preserved</span>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:clamp(24px,4vw,56px);width:100%">
+          <a href="https://www.nps.gov/subjects/nationalregister/index.htm" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;flex:0 1 300px;max-width:100%;text-decoration:none"><img src="assets/logo-national-register.png" alt="National Register of Historic Places" style="width:100%;max-height:120px;object-fit:contain;display:block"></a>
+          <a href="https://www.nps.gov/subjects/undergroundrailroad/index.htm" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;flex:0 1 340px;max-width:100%;text-decoration:none"><img src="assets/logo-network-to-freedom.png" alt="National Underground Railroad Network to Freedom" style="width:100%;max-height:120px;object-fit:contain;display:block"></a>
+          <a href="https://pahallowedgrounds.org" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;flex:0 1 340px;max-width:100%;text-decoration:none"><img src="assets/logo-pa-hallowed-grounds.png" alt="Pennsylvania Hallowed Grounds — Preserving Pennsylvania's African American Historic Cemeteries" style="width:100%;max-height:120px;object-fit:contain;display:block"></a>
         </div>
       </div>
     </section>
@@ -161,7 +175,7 @@
             <div style="background:{{ darker }};padding:24px;display:flex;flex-direction:column;gap:8px"><span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:{{ dsub }}">Grounds</span><span style="font-size:15px;line-height:1.6">Open every day<br>8:00am – 4:30pm</span></div>
             <div style="background:{{ darker }};padding:24px;display:flex;flex-direction:column;gap:8px"><span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:{{ dsub }}">Tours</span><span style="font-size:15px;line-height:1.6">Group &amp; school tours<br>by appointment</span></div>
           </div>
-          <span onClick="{{ goMap }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;align-self:flex-start;background:{{ gold }};color:#33301F;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:15px 28px;margin-top:4px" style-hover="background:#EFC94C">Open the Map</span>
+          <span onClick="{{ goMap }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;align-self:flex-start;background:{{ gold }};color:{{ goldText }};font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:15px 28px;margin-top:4px" style-hover="background:{{ goldHi }}">Open the Map</span>
         </div>
         <div style="display:flex;flex-direction:column;gap:12px">
           <div style="border:1px solid {{ dline }};padding:12px;background:{{ darker }}">
@@ -176,17 +190,17 @@
     <section style="background:#EBE9E2;border-top:1px solid #DDDAD0;border-bottom:1px solid #DDDAD0">
       <div style="max-width:1280px;margin:0 auto;padding:clamp(44px,7vw,72px) clamp(20px,5vw,40px);display:grid;grid-template-columns:{{ gHalf }};gap:clamp(28px,5vw,64px);align-items:center">
         <div style="display:flex;flex-direction:column;gap:12px">
-          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">Burials · Memorials · Research</span>
+          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">Burials · Memorials · Research</span>
           <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(26px,5vw,40px);margin:0;line-height:1.12">Speak with someone at Eden.</h2>
           <p style="font-size:16px;line-height:1.75;color:#4A4438;margin:0;max-width:52ch">Burial options, headstones and monuments, pre‑need arrangements, and family research requests are all handled by the cemetery office. Call or email — a person answers.</p>
         </div>
         <div style="display:flex;flex-direction:column;gap:14px">
-          <a href="tel:+16105838737" style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;background:#FFFFFF;border:1px solid #DDDAD0;padding:22px 26px;text-decoration:none;color:#1B1712" style-hover="border-color:#8A6D12">
-            <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#8A6D12">Call the office</span>
+          <a href="tel:+16105838737" style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;background:#FFFFFF;border:1px solid #DDDAD0;padding:22px 26px;text-decoration:none;color:#1B1712" style-hover="border-color:{{ goldInk }}">
+            <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:{{ goldInk }}">Call the office</span>
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(20px,3.4vw,26px)">610‑583‑8737</span>
           </a>
-          <a href="mailto:info@edencemetery.org" style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;background:#FFFFFF;border:1px solid #DDDAD0;padding:22px 26px;text-decoration:none;color:#1B1712" style-hover="border-color:#8A6D12">
-            <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:#8A6D12">Email us</span>
+          <a href="mailto:info@edencemetery.org" style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;background:#FFFFFF;border:1px solid #DDDAD0;padding:22px 26px;text-decoration:none;color:#1B1712" style-hover="border-color:{{ goldInk }}">
+            <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:{{ goldInk }}">Email us</span>
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(16px,2.8vw,22px);word-break:break-all">info@edencemetery.org</span>
           </a>
           <span style="font-size:12.5px;line-height:1.7;color:#6E6759">Office hours Monday–Friday, 10:00 a.m.–3:00 p.m. · Grounds open daily, 8:30 a.m.–4:30 p.m.</span>
@@ -199,11 +213,11 @@
     <section style="background:{{ gold }}">
       <div style="max-width:1280px;margin:0 auto;padding:clamp(44px,7vw,72px) clamp(20px,5vw,40px);display:flex;justify-content:space-between;align-items:center;gap:48px;flex-wrap:wrap">
         <div style="display:flex;flex-direction:column;gap:10px;max-width:640px">
-          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:#33301F;opacity:0.7">Friends of Eden</span>
-          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5vw,40px);margin:0;line-height:1.15;color:#33301F">Black spaces need support now more than ever.</h2>
-          <p style="font-size:16px;line-height:1.65;color:#33301F;opacity:0.85;margin:0">Eden is how we transport the past to our future. Join the Friends of Eden and help preserve 124 years of refusing to let Black history be buried twice.</p>
+          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldText }};opacity:0.7">Friends of Eden</span>
+          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5vw,40px);margin:0;line-height:1.15;color:{{ goldText }}">Black spaces need support now more than ever.</h2>
+          <p style="font-size:16px;line-height:1.65;color:{{ goldText }};opacity:0.85;margin:0">Eden is how we transport the past to our future. Join the Friends of Eden and help preserve 124 years of refusing to let Black history be buried twice.</p>
         </div>
-        <span onClick="{{ goFriends }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;background:{{ dark }};color:#F6F4EA;font-weight:600;font-size:14px;letter-spacing:0.1em;text-transform:uppercase;padding:18px 34px;white-space:nowrap" style-hover="color:#EFC94C">Become a Friend</span>
+        <span onClick="{{ goFriends }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;background:{{ dark }};color:#F6F4EA;font-weight:600;font-size:14px;letter-spacing:0.1em;text-transform:uppercase;padding:18px 34px;white-space:nowrap" style-hover="color:{{ goldHi }}">Become a Friend</span>
       </div>
     </section>
     </sc-if>
@@ -252,11 +266,11 @@
           <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#6E6759;line-height:1.5">Chapel of the Lebanon Cemetery · Lithograph courtesy Historical Society of Pennsylvania</span>
         </div>
         <div style="display:flex;flex-direction:column;gap:18px">
-          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">The Collection Cemetery</span>
+          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">The Collection Cemetery</span>
           <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1;text-wrap:balance">Founded so that death would not be another site of dispossession.</h2>
           <p style="font-size:16.5px;line-height:1.8;color:#4A4438;margin:0">The great Black burial grounds of Philadelphia — home to some of the most important Black Americans in history — were forced to close. Other cemeteries were not forced to move.&nbsp;</p>
           <p style="font-size:16.5px;line-height:1.8;color:#4A4438;margin:0">But Eden took them all in. Their residents were reinterred on Eden’s grounds, where the cemetery’s sections became declarations of pride — with sections named for important historical figures like David Bustill Bowser, Harriet Tubman, and Octavius Catto.&nbsp;&nbsp;</p>
-          <p style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:20px;line-height:1.5;color:#8A6D12;margin:0">What looks like a cemetery is actually an act of resistance — 124 years of refusing to let Black history be buried twice.</p>
+          <p style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:20px;line-height:1.5;color:{{ goldInk }};margin:0">What looks like a cemetery is actually an act of resistance — 124 years of refusing to let Black history be buried twice.</p>
         </div>
       </div>
     </section>
@@ -270,7 +284,7 @@
             <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ gold }}">The Founders</span>
           </div>
           <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">The Eden Cemetery Company</h2>
-          <p style="font-size:16.5px;line-height:1.8;color:{{ dmute }};margin:0">Eden was founded by Jacob C. White Sr. and incorporated by a company of Philadelphians who put their names, their money, and their standing behind a burial ground the city had made impossible. John C. Asbury served as its first president.</p>
+          <p style="font-size:16.5px;line-height:1.8;color:{{ dmute }};margin:0">Eden was founded and incorporated by a company of Philadelphians who put their names, their money, and their standing behind a burial ground the city had made impossible. John C. Asbury served as its first president.</p>
         </div>
         <div style="display:grid;grid-template-columns:{{ gFounders }};gap:1px;background:{{ dline }};border:1px solid {{ dline }}">
           <sc-for list="{{ founders }}" as="f" hint-placeholder-count="5">
@@ -291,7 +305,7 @@
         <div style="display:grid;grid-template-columns:{{ gCards }};gap:40px 32px">
           <sc-for list="{{ timeline }}" as="t" hint-placeholder-count="6">
             <div style="display:flex;flex-direction:column;gap:12px;border-top:2px solid {{ gold }};padding-top:20px">
-              <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:#8A6D12">{{ t.year }}</span>
+              <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:{{ goldInk }}">{{ t.year }}</span>
               <span style="font-size:15px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:#1B1712">{{ t.title }}</span>
               <span style="font-size:14.5px;line-height:1.7;color:#6E6759">{{ t.text }}</span>
             </div>
@@ -333,11 +347,11 @@
           <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#6E6759">Celestine Cromwell · 1854–1902 · Eden’s first burial</span>
         </div>
         <div style="display:flex;flex-direction:column;gap:18px">
-          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">Our Story · The First Burial</span>
+          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">Our Story · The First Burial</span>
           <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">The first person laid to rest at Eden</h2>
           <p style="font-size:16.5px;line-height:1.8;color:#4A4438;margin:0">Celestine Moseley Cromwell died on August 8, 1902, aged 49. Her husband, Willis H. Cromwell, sat on the twenty‑nine‑member advisory board of the Eden Cemetery Company, which had received its charter that June. The board decided that Mrs. Cromwell would be Eden’s first burial.</p>
           <div style="border-left:2px solid {{ gold }};padding:18px 0 18px 24px;display:flex;flex-direction:column;gap:10px;background:#FFFFFF;padding-right:24px;border:1px solid #DDDAD0;border-left:3px solid {{ gold }}">
-            <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#8A6D12">Philadelphia Inquirer · Sunday, August 10, 1902</span>
+            <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:{{ goldInk }}">Philadelphia Inquirer · Sunday, August 10, 1902</span>
             <p style="font-family:'Bricolage Grotesque',sans-serif;font-size:17px;line-height:1.6;color:#1B1712;margin:0">CROMWELL — On August 8, 1902, Celestine Moseley, wife of Willis H. Cromwell, aged 49 years. Funeral from her late residence, 819 South Seventeenth street, on Tuesday morning, at 10 o’clock. Interment at Eden Cemetery.</p>
           </div>
           <p style="font-size:16.5px;line-height:1.8;color:#4A4438;margin:0">Her body lay in the stable shed of Mt. Zion Cemetery for thirty‑six hours while attorneys fought over whether she could be buried at all. When the compromise came, the lawyers themselves served as pallbearers and filled in the grave. Litigation continued through December 1902. Eden’s second burial did not take place until December 12.</p>
@@ -349,14 +363,14 @@
     <section style="background:#EBE9E2;border-bottom:1px solid #DDDAD0">
       <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
         <div style="display:flex;flex-direction:column;gap:14px;max-width:70ch">
-          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:#8A6D12">The Press Record</span>
+          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">The Press Record</span>
           <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">What the newspapers printed</h2>
           <p style="font-size:16px;line-height:1.75;color:#4A4438;margin:0">Transcribed from the <em>Delaware County Daily Times</em>, Chester, Pennsylvania. These headlines are reproduced as they were published. The language is the language of 1902, and it is part of the record Eden exists to preserve.</p>
         </div>
         <div style="display:flex;flex-direction:column;gap:1px;background:#DDDAD0;border:1px solid #DDDAD0;max-width:92ch">
           <sc-for list="{{ pressRecord }}" as="pr" hint-placeholder-count="6">
             <div style="background:#FFFFFF;padding:clamp(26px,4vw,36px) clamp(24px,3.5vw,38px);display:flex;flex-direction:column;gap:14px">
-              <span style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#8A6D12">{{ pr.date }}</span>
+              <span style="font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:{{ goldInk }}">{{ pr.date }}</span>
               <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(20px,3.4vw,26px);line-height:1.2;color:#1B1712;text-transform:uppercase;letter-spacing:0.01em">{{ pr.head }}</span>
               <span style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:17px;line-height:1.4;color:#6E6759">{{ pr.sub }}</span>
               <span style="display:{{ pr.warnDisplay }};align-self:flex-start;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#8A2B12;border:1px solid #C9A08F;background:#FBF2EF;padding:8px 12px;line-height:1.5">Contains a racial slur, reproduced as printed</span>
@@ -365,7 +379,7 @@
                   <p style="font-size:15.5px;line-height:1.85;color:#4A4438;margin:0">{{ para }}</p>
                 </sc-for>
               </div>
-              <span onClick="{{ pr.toggle }}" style="align-self:flex-start;cursor:pointer;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#8A6D12;border-bottom:1px solid #8A6D12;padding-bottom:3px" style-hover="color:#5F4A08;border-color:#5F4A08">{{ pr.toggleLabel }}</span>
+              <span onClick="{{ pr.toggle }}" style="align-self:flex-start;cursor:pointer;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:{{ goldInk }};border-bottom:1px solid {{ goldInk }};padding-bottom:3px" style-hover="color:#5F4A08;border-color:#5F4A08">{{ pr.toggleLabel }}</span>
             </div>
           </sc-for>
         </div>
@@ -382,8 +396,8 @@
             <p style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(24px,4.5vw,32px);font-weight:600;line-height:1.25;color:#F6F4EA;margin:0">The lives at Eden span from 1721 to the present. Walk among them.</p>
           </div>
           <div style="display:flex;gap:16px;flex-wrap:wrap">
-            <span onClick="{{ goNotables }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;background:{{ gold }};color:#33301F;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px" style-hover="background:#EFC94C">Notable Residents</span>
-            <span onClick="{{ goMap }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;border:1px solid {{ dline }};color:#F6F4EA;font-weight:500;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px" style-hover="border-color:#EFC94C;color:#EFC94C">Grounds Map</span>
+            <span onClick="{{ goNotables }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;background:{{ gold }};color:{{ goldText }};font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px" style-hover="background:{{ goldHi }}">Notable Residents</span>
+            <span onClick="{{ goMap }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;border:1px solid {{ dline }};color:#F6F4EA;font-weight:500;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px" style-hover="border-color:{{ goldHi }};color:{{ goldHi }}">Grounds Map</span>
           </div>
         </div>
       </div>
@@ -404,7 +418,7 @@
         </div>
         <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(34px,7vw,58px);margin:0;line-height:1.08">Notable Residents</h1>
         <p style="font-size:17px;line-height:1.75;color:{{ dmute }};margin:0;max-width:70ch">Visitors come to Eden every year searching for the final resting places of the people who built Black America — abolitionists, ministers, physicians, poets, architects, and musicians. Ninety-three thousand stories are waiting to be heard. These are a few of them.</p>
-        <span onClick="{{ goMap }}" style="align-self:flex-start;margin-top:8px;cursor:pointer;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#EFC94C;border-bottom:1px solid #EFC94C;padding-bottom:4px" style-hover="color:#F6F4EA;border-color:#F6F4EA">See Them On the Map →</span>
+        <span onClick="{{ goMap }}" style="align-self:flex-start;margin-top:8px;cursor:pointer;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ goldHi }};border-bottom:1px solid {{ goldHi }};padding-bottom:4px" style-hover="color:#F6F4EA;border-color:#F6F4EA">See Them On the Map →</span>
       </div>
     </section>
 
@@ -418,15 +432,15 @@
           <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#6E6759">Her grave at Eden · Section &amp; lot on the grounds map</span>
         </div>
         <div style="display:flex;flex-direction:column;gap:18px">
-          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">Musicians &amp; Performers</span>
+          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">Musicians &amp; Performers</span>
           <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(32px,6.5vw,52px);margin:0;line-height:1.05">Marian Anderson</h2>
           <div style="display:flex;align-items:center;gap:16px">
             <img src="assets/marian-anderson.jpg" alt="Portrait of Marian Anderson" style="width:76px;height:76px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid {{ gold }};flex:none">
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:22px;color:#6E6759">1897 – 1993</span>
           </div>
           <p style="font-size:16.5px;line-height:1.8;color:#4A4438;margin:0">One of the greatest voices of the twentieth century. When the Daughters of the American Revolution barred her from Constitution Hall in 1939, she sang instead from the steps of the Lincoln Memorial before 75,000 people — a moment that became a landmark of the civil rights movement. In 1955 she became the first African American to perform with the Metropolitan Opera.</p>
-          <p style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:20px;line-height:1.5;color:#8A6D12;margin:0">She carried the sorrow and joy of a people to the world’s great stages. She rests at Eden.</p>
-          <span onClick="{{ goMap }}" style="cursor:pointer;align-self:flex-start;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#8A6D12;border-bottom:2px solid {{ gold }};padding-bottom:5px" style-hover="color:#D9A821">Find her on the map →</span>
+          <p style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:20px;line-height:1.5;color:{{ goldInk }};margin:0">She carried the sorrow and joy of a people to the world’s great stages. She rests at Eden.</p>
+          <span onClick="{{ goMap }}" style="cursor:pointer;align-self:flex-start;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ goldInk }};border-bottom:2px solid {{ gold }};padding-bottom:5px" style-hover="color:{{ gold }}">Find her on the map →</span>
         </div>
       </div>
     </section>
@@ -435,15 +449,15 @@
     <section style="background:#EBE9E2;border-bottom:1px solid #DDDAD0">
       <div style="max-width:1280px;margin:0 auto;padding:clamp(52px,8vw,88px) clamp(20px,5vw,40px);display:grid;grid-template-columns:{{ gHalf }};gap:clamp(32px,5vw,72px);align-items:center">
         <div style="display:flex;flex-direction:column;gap:18px;order:1">
-          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">Civic Leaders · The Forgotten Hero</span>
+          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">Civic Leaders · The Forgotten Hero</span>
           <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(32px,6.5vw,52px);margin:0;line-height:1.05">Octavius V. Catto</h2>
           <div style="display:flex;align-items:center;gap:16px">
             <img src="assets/octavius-catto.jpg" alt="Portrait of Octavius Catto" style="width:76px;height:76px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid {{ gold }};flex:none">
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:22px;color:#6E6759">1839 – 1871</span>
           </div>
           <p style="font-size:16.5px;line-height:1.8;color:#4A4438;margin:0">Scholar, educator, and the dominant civil rights leader of his generation. Catto led efforts to register thousands of African Americans to vote, desegregated Philadelphia’s streetcars, and served as a major in the Pennsylvania National Guard. He was assassinated on Election Day, October 10, 1871, in front of a polling place on South Street — a martyr for the ballot, a century before Selma.</p>
-          <p style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:20px;line-height:1.5;color:#8A6D12;margin:0">Reinterred from Lebanon Cemetery — Eden held him. Eden holds him still.</p>
-          <span onClick="{{ goMap }}" style="cursor:pointer;align-self:flex-start;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#8A6D12;border-bottom:2px solid {{ gold }};padding-bottom:5px" style-hover="color:#D9A821">Find him on the map →</span>
+          <p style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:20px;line-height:1.5;color:{{ goldInk }};margin:0">Reinterred from Lebanon Cemetery — Eden held him. Eden holds him still.</p>
+          <span onClick="{{ goMap }}" style="cursor:pointer;align-self:flex-start;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ goldInk }};border-bottom:2px solid {{ gold }};padding-bottom:5px" style-hover="color:{{ gold }}">Find him on the map →</span>
         </div>
         <div style="display:flex;flex-direction:column;gap:12px;order:2">
           <div style="height:460px;border:1px solid #DDDAD0;background:#FFFFFF;padding:12px">
@@ -469,7 +483,7 @@
         </div>
 
         <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:36px;padding-bottom:20px;border-bottom:1px solid #DDDAD0">
-          <input type="text" value="{{ ndQuery }}" onChange="{{ setNdQuery }}" placeholder="Search by name, work, or section" style="flex:1;min-width:240px;font-family:inherit;font-size:15px;padding:12px 16px;border:1px solid #DDDAD0;background:#FFFFFF;color:#1C1B19;outline:none" style-focus="border-color:#8A6D12">
+          <input type="text" value="{{ ndQuery }}" onChange="{{ setNdQuery }}" placeholder="Search by name, work, or section" style="flex:1;min-width:240px;font-family:inherit;font-size:15px;padding:12px 16px;border:1px solid #DDDAD0;background:#FFFFFF;color:#1C1B19;outline:none" style-focus="border-color:{{ goldInk }}">
           <span style="font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#6E6759;white-space:nowrap">{{ ndCount }} of {{ ndTotal }}</span>
         </div>
 
@@ -479,24 +493,24 @@
               <div style="height:260px;padding:10px;flex:none">
                 <img src="{{ n.img }}" alt="" data-portrait="1" style="width:100%;height:100%;object-fit:contain;object-position:center;background:#20201C;display:{{ n.imgDisplay }}">
                 <div style="width:100%;height:100%;display:{{ n.hasImg }};align-items:center;justify-content:center;background:linear-gradient(150deg,#2B2A25 0%,#1C1B19 100%);overflow:hidden">
-                  <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(72px,14vw,128px);letter-spacing:0.02em;line-height:1;color:transparent;background:linear-gradient(160deg,#EFC94C 0%,#A88A22 100%);-webkit-background-clip:text;background-clip:text">{{ n.initial }}</span>
+                  <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(72px,14vw,128px);letter-spacing:0.02em;line-height:1;color:transparent;background:linear-gradient(160deg,{{ goldHi }} 0%,#A88A22 100%);-webkit-background-clip:text;background-clip:text">{{ n.initial }}</span>
                 </div>
               </div>
               <div style="padding:22px 26px 28px;display:flex;flex-direction:column;gap:9px;flex:1">
-                <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:#8A6D12">{{ n.type }}</span>
+                <span style="font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:{{ goldInk }}">{{ n.type }}</span>
                 <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:24px;line-height:1.15">{{ n.name }}</span>
                 <span style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:16px;color:#6E6759;display:{{ n.datesDisplay }}">{{ n.dates }}</span>
                 <span style="font-size:14.5px;line-height:1.65;color:#4A4438;display:{{ n.bioDisplay }}">{{ n.bio }}</span>
                 <span style="font-size:13.5px;line-height:1.6;color:#6E6759;display:{{ n.milDisplay }}">{{ n.mil }}</span>
                 <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#8A8371;margin-top:auto;padding-top:12px">{{ n.place }}</span>
-                <a href="{{ n.link }}" target="_blank" rel="noopener" style="display:{{ n.linkDisplay }};font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#8A6D12;text-decoration:none;border-bottom:1px solid {{ gold }};padding-bottom:3px;align-self:flex-start" style-hover="color:#1C1B19;border-color:#1C1B19">Read more →</a>
+                <a href="{{ n.link }}" target="_blank" rel="noopener" style="display:{{ n.linkDisplay }};font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ goldInk }};text-decoration:none;border-bottom:1px solid {{ gold }};padding-bottom:3px;align-self:flex-start" style-hover="color:#1C1B19;border-color:#1C1B19">Read more →</a>
               </div>
             </div>
           </sc-for>
         </div>
         <div style="margin-top:56px;background:{{ dark }};padding:clamp(28px,5vw,48px);display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap">
           <p style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:clamp(22px,4vw,28px);line-height:1.35;color:#F6F4EA;margin:0;max-width:56ch">“What looks like a cemetery is actually an act of resistance — 124 years of refusing to let Black history be buried twice.”</p>
-          <span onClick="{{ goMap }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;background:{{ gold }};color:#33301F;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;white-space:nowrap" style-hover="background:#EFC94C">Walk the Grounds</span>
+          <span onClick="{{ goMap }}" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;background:{{ gold }};color:{{ goldText }};font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;white-space:nowrap" style-hover="background:{{ goldHi }}">Walk the Grounds</span>
         </div>
       </div>
     </section>
@@ -520,7 +534,6 @@
           <div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:30px;color:{{ gold }};line-height:1">{{ jubCount }}</span><span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:{{ dmute }}">People honored</span></div>
           <div style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:30px;color:{{ gold }};line-height:1">{{ jubPieces }}</span><span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:{{ dmute }}">Stories, letters &amp; poems</span></div>
         </div>
-        <a href="./kids-map.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start;margin-top:10px;padding:12px 18px;border:1.5px solid {{ gold }};color:{{ gold }};font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none" style-hover="background:{{ gold }};color:#1B1712">Print the Kids’ Map · Find the Ancestors →</a>
       </div>
     </section>
 
@@ -530,12 +543,12 @@
           <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;font-weight:700">Take it with you</span>
           <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:clamp(28px,4.5vw,44px);margin:0;line-height:1.05;text-wrap:balance">Find the Ancestors: the kids’ map</h2>
           <p style="font-size:16.5px;line-height:1.7;margin:0;max-width:52ch;text-wrap:pretty">A one-page treasure map of Eden. Follow the numbers, find all twelve markers, and check them off as you go. Print it at home or at school and bring it on your visit.</p>
-          <a href="./kids-map.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start;padding:14px 22px;background:#1B1712;color:#FFD23F;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none" style-hover="background:#FF6B2C;color:#FFFFFF">Open &amp; print the map →</a>
-          <span style="font-size:13px;color:#4A4538">Opens in a new tab · prints on one landscape sheet · save as PDF from the print dialog</span>
+          <a href="./kids-map.html" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start;padding:14px 22px;background:#1B1712;color:#FFD23F;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none" style-hover="background:#FF6B2C;color:#FFFFFF">Open &amp; print the map →</a>
+          <span style="font-size:13px;color:#4A4538">Prints on one landscape sheet · save as PDF from the print dialog</span>
         </div>
         <a href="./kids-map.html" target="_blank" rel="noopener" style="display:block;background:#FFFFFF;padding:10px;box-shadow:0 18px 40px rgba(27,23,18,0.25);transform:rotate(-1.2deg);text-decoration:none" style-hover="transform:rotate(0deg)">
           <div data-km-preview="1" style="position:relative;width:100%;aspect-ratio:11/8.5;overflow:hidden;background:#FFFFFF">
-            <iframe src="./kids-map.html" tabIndex="-1" scrolling="no" style="position:absolute;top:0;left:0;width:1100px;height:850px;border:0;transform-origin:0 0;transform:scale(var(--kmScale,0.5));pointer-events:none" title="Preview of the kids' map"></iframe>
+            <iframe src="./Eden Kids Map.dc.html" tabIndex="-1" scrolling="no" style="position:absolute;top:0;left:0;width:1100px;height:850px;border:0;transform-origin:0 0;transform:scale(var(--kmScale,0.5));pointer-events:none" title="Preview of the kids' map"></iframe>
           </div>
         </a>
       </div>
@@ -553,7 +566,7 @@
               </div>
               <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:19px;line-height:1.15;color:#1B1712">{{ h.name }}</span>
               <span style="font-size:12px;letter-spacing:0.02em;color:#6E6759;line-height:1.5">{{ h.students }}</span>
-              <span style="margin-top:auto;padding-top:6px;font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:#8A6D12">{{ h.kinds }}</span>
+              <span style="margin-top:auto;padding-top:6px;font-size:10.5px;letter-spacing:0.16em;text-transform:uppercase;color:{{ goldInk }}">{{ h.kinds }}</span>
             </div>
           </sc-for>
         </div>
@@ -567,20 +580,20 @@
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:17px;color:{{ dmute }};display:{{ jubSel.datesDisplay }}">{{ jubSel.dates }}</span>
             <p style="font-size:16.5px;line-height:1.8;margin:0;color:#EDEBDD">{{ jubSel.intro }}</p>
             <span style="font-size:13px;line-height:1.6;color:{{ dmute }};border-top:1px solid {{ dline }};padding-top:16px">{{ jubSel.students }}</span>
-            <span onClick="{{ jubSel.goMap }}" style="display:{{ jubSel.mapDisplay }};cursor:pointer;align-self:flex-start;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:{{ gold }};border-bottom:2px solid {{ gold }};padding-bottom:4px" style-hover="color:#EFC94C">Find them on the map →</span>
+            <span onClick="{{ jubSel.goMap }}" style="display:{{ jubSel.mapDisplay }};cursor:pointer;align-self:flex-start;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:{{ gold }};border-bottom:2px solid {{ gold }};padding-bottom:4px" style-hover="color:{{ goldHi }}">Find them on the map →</span>
           </div>
 
           <div style="padding:clamp(32px,4vw,52px) clamp(24px,4vw,44px);display:flex;flex-direction:column;gap:40px">
 
             <div style="display:{{ jubSel.storyDisplay }};flex-direction:column;gap:14px">
-              <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">Their Story</span>
+              <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">Their Story</span>
               <sc-for list="{{ jubSel.story }}" as="p" hint-placeholder-count="3">
                 <p style="font-size:16px;line-height:1.85;color:#2B2820;margin:0;max-width:68ch">{{ p }}</p>
               </sc-for>
             </div>
 
             <div style="display:{{ jubSel.letterDisplay }};flex-direction:column;gap:14px;background:#F5F4F0;border:1px solid #DDDAD0;padding:28px 30px">
-              <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">A Letter</span>
+              <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">A Letter</span>
               <sc-for list="{{ jubSel.letter }}" as="p" hint-placeholder-count="2">
                 <p style="font-family:'Bricolage Grotesque',sans-serif;font-size:17px;line-height:1.75;color:#2B2820;margin:0;max-width:62ch">{{ p }}</p>
               </sc-for>
@@ -588,7 +601,7 @@
             </div>
 
             <div style="display:{{ jubSel.poemsDisplay }};flex-direction:column;gap:28px">
-              <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">Poems &amp; Odes</span>
+              <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">Poems &amp; Odes</span>
               <sc-for list="{{ jubSel.poems }}" as="pm" hint-placeholder-count="1">
                 <div style="display:flex;flex-direction:column;gap:10px;border-left:2px solid {{ gold }};padding-left:22px">
                   <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:20px;color:#1B1712;line-height:1.2">{{ pm.title }}</span>
@@ -605,7 +618,7 @@
 
         <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid #DDDAD0;padding-top:24px">
           <span style="font-size:13px;line-height:1.6;color:#6E6759;max-width:70ch">{{ jubCredit }} More poems, haiku, and letters are still being written — this page will grow as the students finish them.</span>
-          <span onClick="{{ goNotables }}" style="cursor:pointer;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#8A6D12;border-bottom:1px solid #8A6D12;padding-bottom:3px;white-space:nowrap" style-hover="color:#5F4A08">All Notable Residents →</span>
+          <span onClick="{{ goNotables }}" style="cursor:pointer;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:{{ goldInk }};border-bottom:1px solid {{ goldInk }};padding-bottom:3px;white-space:nowrap" style-hover="color:#5F4A08">All Notable Residents →</span>
         </div>
 
       </div>
@@ -613,10 +626,10 @@
 
     <section style="background:#F5F4F0">
       <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px) clamp(48px,7vw,88px);display:flex;flex-direction:column;gap:20px">
-        <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:#8A6D12;font-weight:600">Support the young authors</span>
-        <a href="https://www.jubileeschool.net/books" target="_blank" rel="noopener" style="display:grid;grid-template-columns:minmax(140px,260px) minmax(0,1fr);gap:32px;align-items:center;background:#1B1712;color:#F6F4EA;padding:28px;text-decoration:none;max-width:1200px;margin:0 auto" style-hover="background:#2B2620">
-          <img src="https://static1.squarespace.com/static/6740c9bd88cd690aa5290aec/6740e2e893bf7b5caab7316a/69860a18d969c935e4d2b599/1788156103842/FINAL_Philly%2BHistory%2BMakers_COVER.jpg?format=750w" alt="Book cover: Celebrating History Makers from Philadelphia's Black Community" style="width:100%;aspect-ratio:1;object-fit:cover;display:block;box-shadow:0 10px 24px rgba(0,0,0,0.45);transform:rotate(-2deg)">
-          <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
+        <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }};font-weight:600">Support the young authors</span>
+        <a href="https://www.jubileeschool.net/books" target="_blank" rel="noopener" style="display:flex;flex-wrap:wrap;gap:28px 36px;align-items:center;background:#1B1712;color:#F6F4EA;padding:clamp(20px,4vw,28px);text-decoration:none;max-width:1200px;margin:0 auto" style-hover="background:#2B2620">
+          <img src="https://static1.squarespace.com/static/6740c9bd88cd690aa5290aec/6740e2e893bf7b5caab7316a/69860a18d969c935e4d2b599/1788156103842/FINAL_Philly%2BHistory%2BMakers_COVER.jpg?format=750w" alt="Book cover: Celebrating History Makers from Philadelphia's Black Community" style="flex:0 1 240px;width:240px;max-width:100%;aspect-ratio:1;object-fit:cover;display:block;box-shadow:0 10px 24px rgba(0,0,0,0.45);transform:rotate(-2deg);margin:0 auto">
+          <div style="flex:1 1 280px;display:flex;flex-direction:column;gap:12px;min-width:0">
             <span style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#FFD23F;font-weight:700">Jubilee Voices Publishing House</span>
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:clamp(20px,2.4vw,26px);line-height:1.15;text-wrap:balance">Celebrating History Makers from Philadelphia’s Black Community</span>
             <span style="font-size:14.5px;line-height:1.65;color:#CFCCC4;text-wrap:pretty">Written, illustrated, and self-published by Jubilee School students — the same young historians behind these letters. Every copy supports the school’s student publishing program, and there are more titles where this one came from.</span>
@@ -647,14 +660,14 @@
       <div style="max-width:1280px;margin:0 auto;padding:clamp(44px,7vw,72px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:36px">
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;align-items:stretch">
           <div style="background:#FFFFFF;border:1px solid #DDDAD0;padding:30px;display:flex;flex-direction:column;gap:16px">
-            <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">Visiting Hours</span>
+            <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">Visiting Hours</span>
             <div style="display:flex;flex-direction:column;gap:6px">
               <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:26px;font-weight:600">Daily 8:00am – 4:30pm</span>
               <span style="font-size:14px;line-height:1.6;color:#6E6759">Grounds open every day of the year. Office hours Mon–Fri.</span>
             </div>
             <div style="height:1px;background:#DDDAD0"></div>
             <div style="display:flex;flex-direction:column;gap:6px">
-              <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">Getting Here</span>
+              <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">Getting Here</span>
               <span style="font-size:14px;line-height:1.7;color:#4A4438">1434 Springfield Road<br>Collingdale, PA 19023<br>610‑583‑8737</span>
             </div>
           </div>
@@ -665,20 +678,19 @@
             <a href="tel:6105838737" style="align-self:flex-start;margin-top:auto;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ gold }};border-bottom:2px solid {{ gold }};padding-bottom:5px;text-decoration:none" style-hover="color:#F6F4EA">Contact us · 610‑583‑8737</a>
           </div>
           <div style="border:1px solid #CFCBBF;padding:24px 26px;display:flex;flex-direction:column;gap:14px">
-            <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">Self-Guided Walks</span>
-            <span style="font-size:14px;line-height:1.7;color:#4A4438;text-wrap:pretty">Two phone-friendly walking tours. Each stop highlights where you are on the plan and the graves discussed. Print the route sheet to carry along.</span>
+            <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">Self-Guided Walks</span>
+            <span style="font-size:14px;line-height:1.7;color:#4A4438;text-wrap:pretty">Two phone-friendly self-guided walks. Each stop highlights where you are on the plan and the graves discussed. Print the route sheet to carry along.</span>
             <div style="display:flex;flex-direction:column;gap:10px">
-              <a href="./tour-short.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1.5px solid #1B1712;color:#1B1712;text-decoration:none;min-height:44px" style-hover="background:#1B1712;color:#EFC94C"><span style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">Short Tour · 4 stops</span><span aria-hidden="true">→</span></a>
-              <a href="./tour-long.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1.5px solid #1B1712;color:#1B1712;text-decoration:none;min-height:44px" style-hover="background:#1B1712;color:#EFC94C"><span style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">Full Tour · 8 stops</span><span aria-hidden="true">→</span></a>
+              <a href="./tour-short.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1.5px solid #1B1712;color:#1B1712;text-decoration:none;min-height:44px" style-hover="background:#1B1712;color:{{ goldHi }}"><span style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">Short Walk · 4 stops</span><span aria-hidden="true">→</span></a>
+              <a href="./tour-long.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1.5px solid #1B1712;color:#1B1712;text-decoration:none;min-height:44px" style-hover="background:#1B1712;color:{{ goldHi }}"><span style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">Full Walk · 8 stops</span><span aria-hidden="true">→</span></a>
             </div>
-            <div style="display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;letter-spacing:0.08em;text-transform:uppercase"><span style="color:#6E6759">Print the tour:</span><a href="./tour-short-print.html" style="color:#8A6D12;font-weight:600;text-decoration:none">Short</a><a href="./tour-long-print.html" style="color:#8A6D12;font-weight:600;text-decoration:none">Full</a></div>
+            <div style="display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;letter-spacing:0.08em;text-transform:uppercase"><span style="color:#6E6759">Print the walk:</span><a href="./tour-short-print.html" style="color:{{ goldInk }};font-weight:600;text-decoration:none">Short</a><a href="./tour-long-print.html" style="color:{{ goldInk }};font-weight:600;text-decoration:none">Full</a></div>
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:14px">
-          <div style="border:1px solid #DDDAD0;background:#FFFFFF;padding:12px;height:clamp(620px,90vh,1180px);box-sizing:border-box">
+          <div style="border:1px solid #DDDAD0;background:#FFFFFF;padding:0;height:clamp(640px,90vh,1100px);box-sizing:border-box">
             <iframe src="{{ mapSrc }}" style="width:100%;height:100%;border:0;display:block" title="Eden Cemetery interactive grounds map"></iframe>
           </div>
-          <span style="font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#6E6759">Notable burials map — search a name, filter by category, or tap a dot for the story. Scroll to zoom and drag to reposition so faces aren’t cut off.</span>
         </div>
       </div>
     </section>
@@ -706,7 +718,7 @@
         <div style="display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
             <span style="font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#6E6759">Lot locator — use the search box in the map to find a name, section, or lot number.</span>
-            <a href="https://arcg.is/185PKD1" target="_blank" rel="noopener" style="cursor:pointer;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#8A6D12;border:1px solid #DDDAD0;padding:9px 14px;white-space:nowrap" style-hover="background:#1C1B19;border-color:#1C1B19;color:#EFC94C">Open full screen ↗</a>
+            <a href="https://arcg.is/185PKD1" target="_blank" rel="noopener" style="cursor:pointer;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:{{ goldInk }};border:1px solid #DDDAD0;padding:9px 14px;white-space:nowrap" style-hover="background:#1C1B19;border-color:#1C1B19;color:{{ goldHi }}">Open full screen ↗</a>
           </div>
           <div style="border:1px solid #DDDAD0;background:#FFFFFF;padding:12px;height:clamp(560px,90vh,780px);box-sizing:border-box">
             <iframe src="https://1838.maps.arcgis.com/apps/instant/sidebar/index.html?appid=c8868bd734c54e39a2475ff723a54e49" style="width:100%;height:100%;border:0;display:block" title="Eden Cemetery lot and grave locator" frameborder="0" allowfullscreen=""></iframe>
@@ -714,10 +726,10 @@
         </div>
         <div style="display:flex;flex-direction:column;gap:20px">
           <div style="background:#FFFFFF;border:1px solid #DDDAD0;padding:30px;display:flex;flex-direction:column;gap:16px">
-            <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">How to Search</span>
+            <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">How to Search</span>
             <div style="display:flex;flex-direction:column;gap:14px">
-              <div style="display:flex;gap:12px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:16px;color:#8A6D12;flex:0 0 auto">1.</span><span style="font-size:14px;line-height:1.6;color:#4A4438">Click the 'Enter a Lot Number' search bar inside the map and type a lot number.&nbsp;<br></span></div>
-              <div style="display:flex;gap:12px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:16px;color:#8A6D12;flex:0 0 auto">2.</span><span style="font-size:14px;line-height:1.6;color:#4A4438">Select a result to zoom to the parcel and open its record.</span></div>
+              <div style="display:flex;gap:12px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:16px;color:{{ goldInk }};flex:0 0 auto">1.</span><span style="font-size:14px;line-height:1.6;color:#4A4438">Click the 'Enter a Lot Number' search bar inside the map and type a lot number.&nbsp;<br></span></div>
+              <div style="display:flex;gap:12px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:16px;color:{{ goldInk }};flex:0 0 auto">2.</span><span style="font-size:14px;line-height:1.6;color:#4A4438">Select a result to zoom to the parcel and open its record.</span></div>
               
             </div>
           </div>
@@ -725,10 +737,10 @@
             <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ gold }}">Don’t Know the Lot Number?</span>
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:24px;font-weight:600;color:#F6F4EA;line-height:1.25">Look it up on Find a Grave first.</span>
             <span style="font-size:14px;line-height:1.7;color:{{ dmute }}">Search your ancestor on Eden’s Find a Grave listing to get their section and lot number — then come back here and enter it in the map to pinpoint the exact location.</span>
-            <a href="https://www.findagrave.com/cemetery/44744/memorial-search?cemeteryName=Eden+Cemetery&amp;orderby=r&amp;page=1" target="_blank" rel="noopener" style="cursor:pointer;align-self:flex-start;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ gold }};border-bottom:2px solid {{ gold }};padding-bottom:5px" style-hover="color:#EFC94C">Go to Find a Grave ↗</a>
+            <a href="https://www.findagrave.com/cemetery/44744/memorial-search?cemeteryName=Eden+Cemetery&amp;orderby=r&amp;page=1" target="_blank" rel="noopener" style="cursor:pointer;align-self:flex-start;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ gold }};border-bottom:2px solid {{ gold }};padding-bottom:5px" style-hover="color:{{ goldHi }}">Go to Find a Grave ↗</a>
           </div>
           <div style="border:1px solid #CFCBBF;padding:24px 26px;display:flex;flex-direction:column;gap:8px">
-            <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:#8A6D12">CONTACT US FOR ADDITIONAL ASSISTANCE</span>
+            <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">CONTACT US FOR ADDITIONAL ASSISTANCE</span>
             <span style="font-size:14px;line-height:1.8;color:#4A4438">1434 Springfield Road<br>Collingdale, PA 19023<br>610‑583‑8737<br>info@edencemetery.org</span>
           </div>
         </div>
@@ -751,8 +763,8 @@
         <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(34px,7vw,58px);margin:0;line-height:1.08">Friends of Eden</h1>
         <p style="font-size:17px;line-height:1.75;color:{{ dmute }};margin:0;max-width:70ch">We need Eden not just because of what happened in the past — but because of what is happening right now. The Friends of Eden fund preservation, education, and access, so the stories this ground holds can teach future generations.</p>
         <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:6px">
-          <a href="tel:+16105838737" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;background:{{ gold }};color:#33301F;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;text-decoration:none" style-hover="background:#EFC94C">Call 610‑583‑8737</a>
-          <a href="mailto:info@edencemetery.org?subject=Supporting%20Eden%20Cemetery" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;border:1px solid {{ dline }};color:#F6F4EA;font-weight:500;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;text-decoration:none" style-hover="border-color:#EFC94C;color:#EFC94C">Email info@edencemetery.org</a>
+          <a href="tel:+16105838737" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;background:{{ gold }};color:{{ goldText }};font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;text-decoration:none" style-hover="background:{{ goldHi }}">Call 610‑583‑8737</a>
+          <a href="mailto:info@edencemetery.org?subject=Supporting%20Eden%20Cemetery" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;border:1px solid {{ dline }};color:#F6F4EA;font-weight:500;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;text-decoration:none" style-hover="border-color:{{ goldHi }};color:{{ goldHi }}">Email info@edencemetery.org</a>
         </div>
       </div>
     </section>
@@ -761,15 +773,15 @@
       <div style="max-width:1280px;margin:0 auto;padding:clamp(52px,8vw,88px) clamp(20px,5vw,40px)">
         <div style="display:grid;grid-template-columns:{{ gCards }};gap:28px">
           <div style="border:1px solid #DDDAD0;padding:34px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF">
-            <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:#8A6D12">Preserve</span>
+            <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:{{ goldInk }}">Preserve</span>
             <span style="font-size:14.5px;line-height:1.7;color:#6E6759">Monument conservation, grounds care, and restoration of the historic sections reinterred from Lebanon and Olive Cemeteries.</span>
           </div>
           <div style="border:1px solid #DDDAD0;padding:34px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF">
-            <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:#8A6D12">Educate</span>
+            <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:{{ goldInk }}">Educate</span>
             <span style="font-size:14.5px;line-height:1.7;color:#6E6759">School programs, research support, and public tours that connect visitors with 93,000 stories of ordinary people who did extraordinary things.</span>
           </div>
           <div style="border:1px solid #DDDAD0;padding:34px;display:flex;flex-direction:column;gap:12px;background:#FFFFFF">
-            <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:#8A6D12">Sustain</span>
+            <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(23px,4vw,30px);font-weight:600;color:{{ goldInk }}">Sustain</span>
             <span style="font-size:14.5px;line-height:1.7;color:#6E6759">An endowment for the next century of stewardship — so Eden can keep preserving memory and cultural continuity.</span>
           </div>
         </div>
@@ -812,9 +824,106 @@
           <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ gold }}">That’s Ours. It Has Been Ours From the Beginning.</span>
           <p style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(25px,4.5vw,34px);font-weight:600;line-height:1.3;color:#F6F4EA;margin:0;max-width:30ch">Help Eden survive — so the stories it holds can teach us ways to improve our now.</p>
           <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:8px">
-            <a href="tel:+16105838737" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;background:{{ gold }};color:#33301F;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 34px;text-decoration:none" style-hover="background:#EFC94C">Call 610‑583‑8737</a>
-            <a href="mailto:info@edencemetery.org?subject=Supporting%20Eden%20Cemetery" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;border:1px solid {{ dline }};color:#F6F4EA;font-weight:500;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 34px;text-decoration:none" style-hover="border-color:#EFC94C;color:#EFC94C">Email Us</a>
+            <a href="tel:+16105838737" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;background:{{ gold }};color:{{ goldText }};font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 34px;text-decoration:none" style-hover="background:{{ goldHi }}">Call 610‑583‑8737</a>
+            <a href="mailto:info@edencemetery.org?subject=Supporting%20Eden%20Cemetery" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;border:1px solid {{ dline }};color:#F6F4EA;font-weight:500;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 34px;text-decoration:none" style-hover="border-color:{{ goldHi }};color:{{ goldHi }}">Email Us</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  </sc-if>
+
+  <!-- ============ MISSION & STAFF ============ -->
+  <sc-if value="{{ isMission }}" hint-placeholder-val="{{ false }}">
+  <main data-screen-label="Mission and Staff">
+
+    <section style="background:{{ dark }};color:#F6F4EA">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,8vw,80px) clamp(20px,5vw,40px) clamp(40px,6vw,64px);display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;align-items:center;gap:14px">
+          <span style="width:36px;height:1px;background:{{ gold }}"></span>
+          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ gold }}">Who We Are</span>
+        </div>
+        <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(34px,7vw,58px);margin:0;line-height:1.08;text-wrap:balance">Mission, Staff &amp; Board</h1>
+        <p style="font-size:17px;line-height:1.75;color:{{ dmute }};margin:0;max-width:70ch">The people and principles that care for Eden — its grounds, its records, and the families it serves.</p>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section style="background:#F5F4F0;border-bottom:1px solid #DDDAD0">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:grid;grid-template-columns:{{ gHalf }};gap:clamp(32px,5vw,72px);align-items:start">
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Our Mission</span>
+          <p style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(21px,2.6vw,28px);line-height:1.35;margin:0;color:#1B1712;text-wrap:pretty">Historic Eden Cemetery exists to honor, preserve, and steward the burial ground, records, and legacy of African Americans laid to rest at Eden, while ensuring dignity in burial, integrity in historical preservation, and service to present and future generations.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px;background:{{ dark }};color:#F6F4EA;padding:clamp(28px,4vw,40px)">
+          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ gold }}">Our Vision</span>
+          <p style="font-size:17px;line-height:1.75;margin:0;color:{{ dmute }};text-wrap:pretty">Historic Eden Cemetery will be a protected and respected historic site where African American history is preserved, burial records are secure and accessible, families are served with care and respect, and the legacy of those interred is safeguarded for generations to come.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section style="background:#EBE9E2;border-bottom:1px solid #DDDAD0">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
+        <div style="display:flex;flex-direction:column;gap:14px;max-width:70ch">
+          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Values</span>
+          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">What guides our care</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:{{ gCards }};gap:1px;background:#DDDAD0;border:1px solid #DDDAD0">
+          <sc-for list="{{ values }}" as="v" hint-placeholder-count="7">
+            <div style="background:#FFFFFF;padding:30px 28px;display:flex;flex-direction:column;gap:12px">
+              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(20px,3vw,24px);color:{{ goldInk }};line-height:1.15">{{ v.title }}</span>
+              <span style="font-size:15px;line-height:1.65;color:#4A4438;text-wrap:pretty">{{ v.text }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <!-- Staff -->
+    <section style="background:#F5F4F0;border-bottom:1px solid #DDDAD0">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
+        <div style="display:flex;flex-direction:column;gap:14px;max-width:70ch">
+          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Staff</span>
+          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">The Eden team</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:{{ gCards }};gap:20px">
+          <sc-for list="{{ staff }}" as="s" hint-placeholder-count="8">
+            <div style="background:#FFFFFF;border:1px solid #DDDAD0;padding:26px 26px 24px;display:flex;flex-direction:column;gap:8px">
+              <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:{{ goldInk }}">{{ s.role }}</span>
+              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:22px;line-height:1.15;color:#1B1712">{{ s.name }}</span>
+              <a href="{{ s.mailto }}" style="font-size:14px;color:#4A4438;text-decoration:none;border-bottom:1px solid #DDDAD0;padding-bottom:2px;align-self:flex-start;overflow-wrap:anywhere" style-hover="color:{{ goldInk }};border-color:{{ goldInk }}">{{ s.email }}</a>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <!-- Board -->
+    <section style="background:#EBE9E2;border-top:1px solid #DDDAD0">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
+        <div style="display:grid;grid-template-columns:{{ gHalf }};gap:clamp(28px,5vw,64px);align-items:center">
+          <div style="display:flex;flex-direction:column;gap:14px;max-width:70ch">
+            <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Board of Directors</span>
+            <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">Eden Cemetery Company</h2>
+            <p style="font-size:16px;line-height:1.75;color:#4A4438;margin:0;max-width:60ch">Governance and oversight for the grounds, records, and long-term future of Eden — a trust that began with the five founders who signed the company’s charter in June 1902.</p>
+          </div>
+          <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+            <img src="assets/charter-1902.png" alt="Charter of the Eden Cemetery Company, witnessed June 20, 1902, with the signatures and seals of the five founders" style="width:100%;display:block;border:1px solid #DDDAD0;background:#FFFFFF;padding:8px;box-shadow:0 12px 30px rgba(27,23,18,0.14)">
+            <figcaption style="font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6E6759;line-height:1.6">Charter of the Eden Cemetery Company · Witnessed June 20, 1902</figcaption>
+          </figure>
+        </div>
+        <div style="display:grid;grid-template-columns:{{ gCards }};gap:20px">
+          <sc-for list="{{ board }}" as="b" hint-placeholder-count="9">
+            <div style="background:{{ b.bg }};color:{{ b.fg }};border:1px solid {{ b.line }};padding:26px 26px 24px;display:flex;flex-direction:column;gap:14px;min-height:150px">
+              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:15px;letter-spacing:0.06em;width:52px;height:52px;display:inline-flex;align-items:center;justify-content:center;border:1.5px solid {{ b.accent }};color:{{ b.accent }};border-radius:50%">{{ b.initials }}</span>
+              <div style="display:flex;flex-direction:column;gap:6px;margin-top:auto">
+                <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:21px;line-height:1.15">{{ b.name }}</span>
+                <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:{{ b.accent }}">{{ b.role }}</span>
+              </div>
+            </div>
+          </sc-for>
         </div>
       </div>
     </section>
@@ -841,13 +950,13 @@
     <section style="background:#F5F4F0;border-bottom:1px solid #DDDAD0">
       <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
         <div style="display:flex;flex-direction:column;gap:14px;max-width:70ch">
-          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:#8A6D12">Burial Options</span>
+          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Burial Options</span>
           <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">Burial and cremation</h2>
         </div>
         <div style="display:grid;grid-template-columns:{{ gCards }};gap:1px;background:#DDDAD0;border:1px solid #DDDAD0">
           <sc-for list="{{ serviceGroups }}" as="s" hint-placeholder-count="3">
             <div style="background:#FFFFFF;padding:34px 32px;display:flex;flex-direction:column;gap:16px">
-              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(21px,3.6vw,27px);color:#8A6D12;line-height:1.15">{{ s.title }}</span>
+              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(21px,3.6vw,27px);color:{{ goldInk }};line-height:1.15">{{ s.title }}</span>
               <div style="display:flex;flex-direction:column;gap:11px">
                 <sc-for list="{{ s.items }}" as="it" hint-placeholder-count="4">
                   <div style="display:flex;gap:12px;align-items:baseline">
@@ -859,7 +968,7 @@
             </div>
           </sc-for>
         </div>
-        <p style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:clamp(19px,3.4vw,24px);line-height:1.5;color:#8A6D12;margin:0;max-width:60ch">The lives of those who have gone before us are preserved in the memories of the living.</p>
+        <p style="font-family:'Bricolage Grotesque',sans-serif;font-style:italic;font-size:clamp(19px,3.4vw,24px);line-height:1.5;color:{{ goldInk }};margin:0;max-width:60ch">The lives of those who have gone before us are preserved in the memories of the living.</p>
       </div>
     </section>
 
@@ -867,7 +976,7 @@
     <section style="background:#EBE9E2;border-bottom:1px solid #DDDAD0">
       <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
         <div style="display:flex;flex-direction:column;gap:14px;max-width:74ch">
-          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:#8A6D12">Memorials &amp; Headstones</span>
+          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Memorials &amp; Headstones</span>
           <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">Everyone deserves a tangible tribute.</h2>
           <p style="font-size:16.5px;line-height:1.8;color:#4A4438;margin:0">Anyone who has loved a spouse, raised a family, taught children kindness and respect, or helped a friend through sickness and adversity deserves a memorial — a marker at the graveside that represents a life and what it meant to others.</p>
         </div>
@@ -890,8 +999,8 @@
             <p style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(21px,3.8vw,28px);font-weight:600;line-height:1.3;color:#F6F4EA;margin:0">Eden provides memorials and headstones for use at any cemetery, not only our own.</p>
           </div>
           <div style="display:flex;gap:14px;flex-wrap:wrap">
-            <a href="tel:+16105838737" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;background:{{ gold }};color:#33301F;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;text-decoration:none" style-hover="background:#EFC94C">610‑583‑8737</a>
-            <a href="mailto:info@edencemetery.org?subject=Memorial%20consultation" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;border:1px solid {{ dline }};color:#F6F4EA;font-weight:500;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;text-decoration:none" style-hover="border-color:#EFC94C;color:#EFC94C">Request a Consultation</a>
+            <a href="tel:+16105838737" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;background:{{ gold }};color:{{ goldText }};font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;text-decoration:none" style-hover="background:{{ goldHi }}">610‑583‑8737</a>
+            <a href="mailto:info@edencemetery.org?subject=Memorial%20consultation" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;border:1px solid {{ dline }};color:#F6F4EA;font-weight:500;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;text-decoration:none" style-hover="border-color:{{ goldHi }};color:{{ goldHi }}">Request a Consultation</a>
           </div>
         </div>
       </div>
@@ -920,50 +1029,50 @@
 
         <div style="display:flex;flex-direction:column;gap:26px">
           <div style="display:flex;flex-direction:column;gap:14px">
-            <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:#8A6D12">Cemetery Office</span>
+            <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Cemetery Office</span>
             <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(26px,5vw,38px);margin:0;line-height:1.1">Historic Eden Cemetery</h2>
           </div>
           <div style="display:grid;grid-template-columns:{{ gContact }};gap:1px;background:#DDDAD0;border:1px solid #DDDAD0">
             <sc-for list="{{ contactDetails }}" as="c" hint-placeholder-count="6">
               <div style="background:#FFFFFF;padding:22px 24px;display:flex;flex-direction:column;gap:7px">
-                <span style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#8A6D12">{{ c.label }}</span>
+                <span style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:{{ goldInk }}">{{ c.label }}</span>
                 <span style="font-size:15.5px;line-height:1.6;color:#1B1712;overflow-wrap:anywhere">{{ c.value }}</span>
               </div>
             </sc-for>
           </div>
           <div style="background:#FFFFFF;border:1px solid #DDDAD0;border-left:3px solid {{ gold }};padding:24px 26px;display:flex;flex-direction:column;gap:8px">
-            <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#8A6D12">Locating a grave</span>
+            <span style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:{{ goldInk }}">Locating a grave</span>
             <span style="font-size:15px;line-height:1.75;color:#4A4438">If you need help finding a grave, please call the cemetery office at least 48 hours before your visit, Monday through Friday, so we can make arrangements.</span>
           </div>
           <div style="display:flex;gap:14px;flex-wrap:wrap">
-            <a href="tel:+16105838737" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;background:#8A6D12;color:#FFFFFF;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;text-decoration:none" style-hover="background:#6E5610">Call 610‑583‑8737</a>
-            <a href="mailto:info@edencemetery.org" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;border:1px solid #8A6D12;color:#8A6D12;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;text-decoration:none" style-hover="background:#8A6D12;color:#FFFFFF">Email the Office</a>
+            <a href="tel:+16105838737" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;background:{{ goldInk }};color:#FFFFFF;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;text-decoration:none" style-hover="background:#6E5610">Call 610‑583‑8737</a>
+            <a href="mailto:info@edencemetery.org" style="display:inline-flex;align-items:center;justify-content:center;text-align:center;border:1px solid {{ goldInk }};color:{{ goldInk }};font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 30px;text-decoration:none" style-hover="background:{{ goldInk }};color:#FFFFFF">Email the Office</a>
           </div>
         </div>
 
         <div style="background:#FFFFFF;border:1px solid #DDDAD0;padding:clamp(28px,4vw,40px);display:flex;flex-direction:column;gap:20px">
           <div style="display:flex;flex-direction:column;gap:10px">
-            <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:#8A6D12">Send a Message</span>
+            <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Send a Message</span>
             <p style="font-size:14.5px;line-height:1.7;color:#6E6759;margin:0">Fill this in and it will open an email to the cemetery office with your details ready to send.</p>
           </div>
           <form onSubmit="{{ submitContact }}" style="display:flex;flex-direction:column;gap:16px">
             <label style="display:flex;flex-direction:column;gap:7px">
               <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4A4438">Your name</span>
-              <input type="text" name="name" required="{{ true }}" style="padding:13px 15px;border:1px solid #DDDAD0;background:#F5F4F0;font-family:'Instrument Sans',sans-serif;font-size:15px;color:#1B1712;outline:none" style-focus="border-color:#8A6D12">
+              <input type="text" name="name" required="{{ true }}" style="padding:13px 15px;border:1px solid #DDDAD0;background:#F5F4F0;font-family:'Instrument Sans',sans-serif;font-size:15px;color:#1B1712;outline:none" style-focus="border-color:{{ goldInk }}">
             </label>
             <div style="display:grid;grid-template-columns:{{ gField }};gap:16px">
               <label style="display:flex;flex-direction:column;gap:7px">
                 <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4A4438">Email</span>
-                <input type="email" name="email" required="{{ true }}" style="padding:13px 15px;border:1px solid #DDDAD0;background:#F5F4F0;font-family:'Instrument Sans',sans-serif;font-size:15px;color:#1B1712;outline:none;width:100%;box-sizing:border-box" style-focus="border-color:#8A6D12">
+                <input type="email" name="email" required="{{ true }}" style="padding:13px 15px;border:1px solid #DDDAD0;background:#F5F4F0;font-family:'Instrument Sans',sans-serif;font-size:15px;color:#1B1712;outline:none;width:100%;box-sizing:border-box" style-focus="border-color:{{ goldInk }}">
               </label>
               <label style="display:flex;flex-direction:column;gap:7px">
                 <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4A4438">Phone (optional)</span>
-                <input type="tel" name="phone" style="padding:13px 15px;border:1px solid #DDDAD0;background:#F5F4F0;font-family:'Instrument Sans',sans-serif;font-size:15px;color:#1B1712;outline:none;width:100%;box-sizing:border-box" style-focus="border-color:#8A6D12">
+                <input type="tel" name="phone" style="padding:13px 15px;border:1px solid #DDDAD0;background:#F5F4F0;font-family:'Instrument Sans',sans-serif;font-size:15px;color:#1B1712;outline:none;width:100%;box-sizing:border-box" style-focus="border-color:{{ goldInk }}">
               </label>
             </div>
             <label style="display:flex;flex-direction:column;gap:7px">
               <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4A4438">How can we help?</span>
-              <select name="topic" style="padding:13px 15px;border:1px solid #DDDAD0;background:#F5F4F0;font-family:'Instrument Sans',sans-serif;font-size:15px;color:#1B1712;outline:none" style-focus="border-color:#8A6D12">
+              <select name="topic" style="padding:13px 15px;border:1px solid #DDDAD0;background:#F5F4F0;font-family:'Instrument Sans',sans-serif;font-size:15px;color:#1B1712;outline:none" style-focus="border-color:{{ goldInk }}">
                 <sc-for list="{{ contactTopics }}" as="t" hint-placeholder-count="5">
                   <option value="{{ t }}">{{ t }}</option>
                 </sc-for>
@@ -971,9 +1080,9 @@
             </label>
             <label style="display:flex;flex-direction:column;gap:7px">
               <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#4A4438">Message</span>
-              <textarea name="message" rows="6" required="{{ true }}" style="padding:13px 15px;border:1px solid #DDDAD0;background:#F5F4F0;font-family:'Instrument Sans',sans-serif;font-size:15px;line-height:1.6;color:#1B1712;outline:none;resize:vertical" style-focus="border-color:#8A6D12"></textarea>
+              <textarea name="message" rows="6" required="{{ true }}" style="padding:13px 15px;border:1px solid #DDDAD0;background:#F5F4F0;font-family:'Instrument Sans',sans-serif;font-size:15px;line-height:1.6;color:#1B1712;outline:none;resize:vertical" style-focus="border-color:{{ goldInk }}"></textarea>
             </label>
-            <button type="submit" style="align-self:flex-start;cursor:pointer;background:#8A6D12;color:#FFFFFF;border:0;font-family:'Instrument Sans',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 32px" style-hover="background:#6E5610">Send Message</button>
+            <button type="submit" style="align-self:flex-start;cursor:pointer;background:{{ goldInk }};color:#FFFFFF;border:0;font-family:'Instrument Sans',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;padding:16px 32px" style-hover="background:#6E5610">Send Message</button>
           </form>
         </div>
 
@@ -993,24 +1102,25 @@
       </div>
       <div style="display:flex;flex-direction:column;gap:12px">
         <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ gold }}">Our Story</span>
-        <span onClick="{{ goHistory }}" style="font-size:14px;cursor:pointer" style-hover="color:#EFC94C">Beginnings · 1902</span>
-        <span onClick="{{ goNotables }}" style="font-size:14px;cursor:pointer" style-hover="color:#EFC94C">Notable Residents</span>
-        <span style="font-size:14px;cursor:pointer" style-hover="color:#EFC94C">Lebanon &amp; Olive Reinterments</span>
-        <span style="font-size:14px;cursor:pointer" style-hover="color:#EFC94C">Eden Stories</span>
+        <span onClick="{{ goHistory }}" style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Beginnings · 1902</span>
+        <span onClick="{{ goMission }}" style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Mission, Staff &amp; Board</span>
+        <span onClick="{{ goNotables }}" style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Notable Residents</span>
+        <span style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Lebanon &amp; Olive Reinterments</span>
+        <span style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Eden Stories</span>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px">
         <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ gold }}">Visit</span>
-        <span onClick="{{ goMap }}" style="font-size:14px;cursor:pointer" style-hover="color:#EFC94C">Grounds Map</span>
-        <span onClick="{{ goMap }}" style="font-size:14px;cursor:pointer" style-hover="color:#EFC94C">Tours &amp; Events</span>
-        <span style="font-size:14px;cursor:pointer" style-hover="color:#EFC94C">Plan a Visit</span>
-        <span style="font-size:14px;cursor:pointer" style-hover="color:#EFC94C">Burial Records &amp; Research</span>
+        <span onClick="{{ goMap }}" style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Grounds Map</span>
+        <span onClick="{{ goMap }}" style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Tours &amp; Events</span>
+        <span style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Plan a Visit</span>
+        <span style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Burial Records &amp; Research</span>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px">
         <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ gold }}">Services &amp; Support</span>
-        <span onClick="{{ goServices }}" style="font-size:14px;cursor:pointer" style-hover="color:#EFC94C">Burial Options</span>
-        <span onClick="{{ goServices }}" style="font-size:14px;cursor:pointer" style-hover="color:#EFC94C">Memorials &amp; Headstones</span>
-        <span onClick="{{ goFriends }}" style="display:{{ friendsDisplay }};font-size:14px;cursor:pointer" style-hover="color:#EFC94C">Friends of Eden</span>
-        <span onClick="{{ goContact }}" style="font-size:14px;cursor:pointer" style-hover="color:#EFC94C">Contact Us</span>
+        <span onClick="{{ goServices }}" style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Burial Options</span>
+        <span onClick="{{ goServices }}" style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Memorials &amp; Headstones</span>
+        <span onClick="{{ goFriends }}" style="display:{{ friendsDisplay }};font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Friends of Eden</span>
+        <span onClick="{{ goContact }}" style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Contact Us</span>
       </div>
     </div>
     <div style="max-width:1280px;margin:0 auto;padding:24px clamp(20px,5vw,40px) 36px;display:flex;justify-content:space-between;gap:24px;border-top:1px solid {{ dline }};font-size:12px;color:{{ dsub }};flex-wrap:wrap">
@@ -1021,7 +1131,7 @@
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440},&quot;charcoal&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;options&quot;:[&quot;#1C1B19&quot;,&quot;#26241F&quot;,&quot;#302E28&quot;,&quot;#3C3A32&quot;,&quot;#4F4F42&quot;,&quot;#686858&quot;],&quot;default&quot;:&quot;#26241F&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;gold&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;options&quot;:[&quot;#EFC94C&quot;,&quot;#D9A821&quot;,&quot;#B5891A&quot;],&quot;default&quot;:&quot;#D9A821&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;showFriends&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Pages&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440},&quot;charcoal&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#26241F&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;gold&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#D9A821&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;showFriends&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Pages&quot;}}">
 class Component extends DCLogic {
   state = { page: 'home', menuOpen: false, openPress: {}, mob: false, videoOn: false, people: [], groups: {}, cat: 'all', dq: '', showAll: false, notables: [], dirCats: [], dirCat: 'All', dirQuery: '' };
 
@@ -1106,7 +1216,7 @@ class Component extends DCLogic {
 
   componentDidMount() {
     window.__eden = this;
-    this._onHash = () => { const k = location.hash.slice(1); if (['home','history','notables','jubilee','map','lots','services','friends','contact'].includes(k)) this.go(k); };
+    this._onHash = () => { const k = location.hash.slice(1); if (['home','history','mission','notables','jubilee','map','lots','services','friends','contact'].includes(k)) this.go(k); };
     this._onHash(); window.addEventListener('hashchange', this._onHash);
     this.loadPeople();
     this._kmRO = new ResizeObserver(() => this.fitKidsPreview()); this._kmRO.observe(document.body);
@@ -1132,6 +1242,17 @@ class Component extends DCLogic {
 
     this._onEsc = (e) => { if (e.key === 'Escape' && this.state.mapFull) this.setMapFull(false); };
     document.addEventListener('keydown', this._onEsc);
+    // Hero video fades in once it can play; the aerial still stays underneath as the fallback.
+    this._onCanPlay = (e) => { if (e.target && e.target.hasAttribute && e.target.hasAttribute('data-hero-video') && !this.state.videoOn) this.setState({ videoOn: true }); };
+    document.addEventListener('canplay', this._onCanPlay, true);
+    this._heroPoll = setInterval(() => { const v = document.querySelector('video[data-hero-video]'); if (v && v.readyState >= 3 && !this.state.videoOn) this.setState({ videoOn: true }); if (this.state.videoOn) clearInterval(this._heroPoll); }, 500);
+    // The embedded grounds map reports its content height so the frame fits it with no inner scrolling.
+    this._onMapMsg = (e) => {
+      const h = e.data && e.data.edenMapHeight; if (!h) return;
+      const f = document.querySelector('iframe[title="Eden Cemetery interactive grounds map"]'); if (!f) return;
+      f.style.height = h + 'px'; f.parentElement.style.height = 'auto';
+    };
+    window.addEventListener('message', this._onMapMsg);
   }
 
   componentWillUnmount() {
@@ -1139,6 +1260,9 @@ class Component extends DCLogic {
     if (this._mq) this._mq.removeEventListener('change', this._onMq);
     if (this._onImgErr) document.removeEventListener('error', this._onImgErr, true);
     if (this._onEsc) document.removeEventListener('keydown', this._onEsc);
+    if (this._onCanPlay) document.removeEventListener('canplay', this._onCanPlay, true);
+    if (this._heroPoll) clearInterval(this._heroPoll);
+    if (this._onMapMsg) window.removeEventListener('message', this._onMapMsg);
   }
 
   /* The preview and most embeds block the Fullscreen API, so "expand" pins the map
@@ -1188,7 +1312,17 @@ class Component extends DCLogic {
       '#26241F': { darker: '#1C1B19', line: '#3F3D36', mute: '#CFCCC4', sub: '#9C988C' },
       '#1C1B19': { darker: '#131211', line: '#3A3833', mute: '#CFCCC4', sub: '#99968E' },
     };
-    const s = shades[charcoal] || shades['#686858'];
+    // Accent + charcoal families are derived from the two picked colors so any swatch works site-wide.
+    const hx = (h) => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+    const toHex = (r, g, b) => '#' + [r, g, b].map(v => Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2, '0')).join('').toUpperCase();
+    const mix = (a, b, t) => { const A = hx(a), B = hx(b); return toHex(A[0] + (B[0] - A[0]) * t, A[1] + (B[1] - A[1]) * t, A[2] + (B[2] - A[2]) * t); };
+    const lum = (h) => { const [r, g, b] = hx(h).map(v => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); }); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+    const goldL = lum(gold);
+    const goldHi = goldL > 0.5 ? gold : mix(gold, '#FFFFFF', 0.28);
+    let goldInk = gold; while (lum(goldInk) > 0.2) goldInk = mix(goldInk, '#000000', 0.12);
+    const goldText = goldL < 0.3 ? '#F6F4EA' : mix(gold, '#000000', 0.78);
+    const sAuto = { darker: mix(charcoal, '#000000', 0.28), line: mix(charcoal, '#FFFFFF', 0.13), mute: '#CFCCC4', sub: mix(charcoal, '#FFFFFF', 0.5) };
+    const s = shades[charcoal] || sAuto;
 
     const sortKey = n => {
       const w = String(n || '').replace(/^(Bishop|Rev\.|Dr\.|Hon\.|Col\.)\s+/i, '').split(/\s+/);
@@ -1280,7 +1414,7 @@ class Component extends DCLogic {
       isJubilee: page === 'jubilee',
       ...this.jubileeVals(),
       isMap: page === 'map',
-      mapSrc: './eden-map.html' + (this.state.mapFocus ? '?name=' + encodeURIComponent(this.state.mapFocus) : ''),
+      mapSrc: './eden-map.html?embed=1' + (this.state.mapFocus ? '&name=' + encodeURIComponent(this.state.mapFocus) : ''),
       isLots: page === 'lots',
       goLots: () => this.go('lots'),
       navLotsC: navC('lots'),
@@ -1288,6 +1422,41 @@ class Component extends DCLogic {
       friendsDisplay: friendsOn ? 'inline-block' : 'none',
       isFriends: friendsOn && page === 'friends',
       isServices: page === 'services',
+      isMission: page === 'mission',
+      goMission: () => this.go('mission'),
+      navMissionC: navC('mission'),
+      values: [
+        { title: 'Dignity', text: 'We honor every individual interred at Eden through respectful burial practices, careful recordkeeping, and preservation of memory.' },
+        { title: 'Stewardship', text: 'We accept responsibility for the long-term care of Eden\u2019s land, structures, records, and history as caretakers for future generations.' },
+        { title: 'Integrity', text: 'We commit to accuracy, transparency, and ethical practices in governance, documentation, and decision-making.' },
+        { title: 'Preservation', text: 'We actively protect Eden\u2019s physical and archival assets to prevent loss, deterioration, or erasure of African American history.' },
+        { title: 'Accountability', text: 'We hold ourselves responsible to families, descendants, the community, and future generations through sound policies, planning, and oversight.' },
+        { title: 'Intergenerational Responsibility', text: 'We make decisions today with an understanding that Eden must endure beyond current leadership, resources, and circumstances.' },
+        { title: 'Community Trust', text: 'We recognize Eden as a sacred community institution and commit to earning and maintaining public trust through service, respect, and care.' },
+      ],
+      staff: [
+        ['General Manager', 'Coy C. Vickers, Jr.', 'cvickers@edencemetery.org'],
+        ['Director of Family Services', 'Karen Wharton', 'kwharton@edencemetery.org'],
+        ['Director of Administration and Finance', 'Lorraine Medley', 'lmedley@edencemetery.org'],
+        ['Administrative Assistant', 'Tracey L. Smith', 'tsmith@edencemetery.org'],
+        ['Office Assistant', 'Karen Hines', 'khines@edencemetery.org'],
+        ['Grounds Superintendent', 'Hakeem Thomas', 'hthomas@edencemetery.org'],
+        ['Site Supervisor', 'Ronald Johnson', 'rjohnson@edencemetery.org'],
+        ['Researcher', 'Wilda Hayward', 'whayward@edencemetery.org'],
+      ].map(([role, name, email]) => ({ role, name, email, mailto: 'mailto:' + email })),
+      board: [
+        { role: 'President / Chair', name: 'Rev. Dr. J. Wendall Mapson, Jr.', lead: true },
+        { role: 'Secretary \u00b7 Treasurer (Acting)', name: 'JoAnn Warren-Waters', lead: true },
+        { role: 'Member', name: 'Sidney M. Cobb, Jr.' },
+        { role: 'Member', name: 'Herbert M. Edwards' },
+        { role: 'Member', name: 'Wilda Hayward' },
+        { role: 'Member', name: 'Dr. Craig Stutman' },
+        { role: 'Member', name: 'Michelle Thornhill' },
+        { role: 'Member', name: 'Coy C. Vickers, Jr.' },
+        { role: 'Member', name: 'Richard White' },
+      ].map(b => ({ ...b,
+        initials: b.name.replace(/^(Rev\. |Dr\. )+/, '').replace(/,.*$/, '').split(/\s+/).filter(w => w.length > 2 && !/\.$/.test(w)).map(w => w[0]).filter((_, i, arr) => i === 0 || i === arr.length - 1).join(''),
+        bg: b.lead ? charcoal : '#FFFFFF', fg: b.lead ? '#F6F4EA' : '#1B1712', line: b.lead ? charcoal : '#DDDAD0', accent: b.lead ? gold : goldInk })),
       isContact: page === 'contact',
       goServices: () => this.go('services'),
       goContact: () => this.go('contact'),
@@ -1335,14 +1504,14 @@ class Component extends DCLogic {
       navMapC: navC('map'),
       navFriendsC: navC('friends'),
 
-      gold,
+      gold, goldHi, goldInk, goldText,
       dark: charcoal,
       darker: s.darker,
       dline: s.line,
       dmute: s.mute,
       dsub: s.sub,
 
-      dirCats: [{ k: 'all', label: 'All Residents', color: '#8A6D12' }].concat(
+      dirCats: [{ k: 'all', label: 'All Residents', color: goldInk }].concat(
         Object.keys(this.state.groups).map(k => ({ k, label: this.state.groups[k][0], color: this.state.groups[k][1] }))
       ).map(c => ({
         ...c,
@@ -1481,7 +1650,7 @@ class Component extends DCLogic {
         return {
           label: c,
           bg: on ? '#1C1B19' : '#FFFFFF',
-          fg: on ? '#EFC94C' : '#4A4438',
+          fg: on ? goldHi : '#4A4438',
           bd: on ? '#1C1B19' : '#DDDAD0',
           pick: () => this.setState({ dirCat: c })
         };
