@@ -546,9 +546,9 @@
           <a href="./kids-map.html" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start;padding:14px 22px;background:#1B1712;color:#FFD23F;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none" style-hover="background:#FF6B2C;color:#FFFFFF">Open &amp; print the map →</a>
           <span style="font-size:13px;color:#4A4538">Prints on one landscape sheet · save as PDF from the print dialog</span>
         </div>
-        <a href="./kids-map.html" target="_blank" rel="noopener" style="display:block;background:#FFFFFF;padding:10px;box-shadow:0 18px 40px rgba(27,23,18,0.25);transform:rotate(-1.2deg);text-decoration:none" style-hover="transform:rotate(0deg)">
+        <a href="./kids-map.html" style="display:block;background:#FFFFFF;padding:10px;box-shadow:0 18px 40px rgba(27,23,18,0.25);transform:rotate(-1.2deg);text-decoration:none" style-hover="transform:rotate(0deg)">
           <div data-km-preview="1" style="position:relative;width:100%;aspect-ratio:11/8.5;overflow:hidden;background:#FFFFFF">
-            <iframe src="./Eden Kids Map.dc.html" tabIndex="-1" scrolling="no" style="position:absolute;top:0;left:0;width:1100px;height:850px;border:0;transform-origin:0 0;transform:scale(var(--kmScale,0.5));pointer-events:none" title="Preview of the kids' map"></iframe>
+            <iframe src="./kids-map.html?embed=1" tabIndex="-1" scrolling="no" style="position:absolute;top:0;left:0;width:1100px;height:850px;border:0;transform-origin:0 0;transform:scale(var(--kmScale,0.5));pointer-events:none" title="Preview of the kids' map"></iframe>
           </div>
         </a>
       </div>
@@ -1131,7 +1131,7 @@
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440},&quot;charcoal&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#26241F&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;gold&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#D9A821&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;showFriends&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Pages&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440},&quot;charcoal&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#050400&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;gold&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#E9AD16&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Brand&quot;},&quot;showFriends&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Pages&quot;}}">
 class Component extends DCLogic {
   state = { page: 'home', menuOpen: false, openPress: {}, mob: false, videoOn: false, people: [], groups: {}, cat: 'all', dq: '', showAll: false, notables: [], dirCats: [], dirCat: 'All', dirQuery: '' };
 
@@ -1300,8 +1300,8 @@ class Component extends DCLogic {
 
   renderVals() {
     const page = this.state.page;
-    const gold = this.props.gold ?? '#D9A821';
-    const charcoal = this.props.charcoal ?? '#26241F';
+    const gold = this.props.gold ?? '#E9AD16';
+    const charcoal = this.props.charcoal ?? '#050400';
 
     // Derived shades for each charcoal option
     const shades = {
