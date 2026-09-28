@@ -38,6 +38,7 @@
         <span onClick="{{ goNotables }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navNotablesC }}" style-hover="color:{{ goldHi }}">Notable Residents</span>
         <span onClick="{{ goJubilee }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navJubileeC }}" style-hover="color:{{ goldHi }}">For Kids</span>
         <span onClick="{{ goMap }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navMapC }}" style-hover="color:{{ goldHi }}">Map &amp; Tours</span>
+        <span onClick="{{ goWalks }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navWalksC }}" style-hover="color:{{ goldHi }}">Walks</span>
         <span onClick="{{ goLots }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navLotsC }}" style-hover="color:{{ goldHi }}">Find a Lot</span>
         <span onClick="{{ goServices }}" style="cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navServicesC }}" style-hover="color:{{ goldHi }}">Cemetery Services</span>
         <span onClick="{{ goFriends }}" style="display:{{ friendsDisplay }};cursor:pointer;white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:0.06em;color:{{ navFriendsC }}" style-hover="color:{{ goldHi }}">Friends of Eden</span>
@@ -55,6 +56,7 @@
         <span onClick="{{ goNotables }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navNotablesC }}" style-hover="color:{{ goldHi }}">Notable Residents</span>
         <span onClick="{{ goJubilee }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navJubileeC }}" style-hover="color:{{ goldHi }}">For Kids</span>
         <span onClick="{{ goMap }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navMapC }}" style-hover="color:{{ goldHi }}">Map &amp; Tours</span>
+        <span onClick="{{ goWalks }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navWalksC }}" style-hover="color:{{ goldHi }}">Self-Guided Walks</span>
         <span onClick="{{ goLots }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navLotsC }}" style-hover="color:{{ goldHi }}">Find a Lot</span>
         <span onClick="{{ goServices }}" style="cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navServicesC }}" style-hover="color:{{ goldHi }}">Cemetery Services</span>
         <span onClick="{{ goFriends }}" style="display:{{ friendsMobDisplay }};cursor:pointer;font-size:17px;font-weight:500;letter-spacing:0.04em;padding:14px 0;border-bottom:1px solid {{ dline }};color:{{ navFriendsC }}" style-hover="color:{{ goldHi }}">Friends of Eden</span>
@@ -155,9 +157,9 @@
       <div style="max-width:1280px;margin:0 auto;padding:clamp(32px,5vw,52px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:24px;align-items:center">
         <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }};text-align:center">Recognized &amp; preserved</span>
         <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:clamp(24px,4vw,56px);width:100%">
-          <a href="https://www.nps.gov/subjects/nationalregister/index.htm" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;flex:0 1 300px;max-width:100%;text-decoration:none"><img src="assets/logo-national-register.png" alt="National Register of Historic Places" style="width:100%;max-height:120px;object-fit:contain;display:block"></a>
-          <a href="https://www.nps.gov/subjects/undergroundrailroad/index.htm" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;flex:0 1 340px;max-width:100%;text-decoration:none"><img src="assets/logo-network-to-freedom.png" alt="National Underground Railroad Network to Freedom" style="width:100%;max-height:120px;object-fit:contain;display:block"></a>
-          <a href="https://pahallowedgrounds.org" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;flex:0 1 340px;max-width:100%;text-decoration:none"><img src="assets/logo-pa-hallowed-grounds.png" alt="Pennsylvania Hallowed Grounds — Preserving Pennsylvania's African American Historic Cemeteries" style="width:100%;max-height:120px;object-fit:contain;display:block"></a>
+          <a href="https://www.nps.gov/subjects/nationalregister/index.htm" style="display:flex;align-items:center;justify-content:center;flex:0 1 300px;max-width:100%;text-decoration:none"><img src="assets/logo-national-register.png" alt="National Register of Historic Places" style="width:100%;max-height:120px;object-fit:contain;display:block"></a>
+          <a href="https://www.nps.gov/subjects/undergroundrailroad/index.htm" style="display:flex;align-items:center;justify-content:center;flex:0 1 340px;max-width:100%;text-decoration:none"><img src="assets/logo-network-to-freedom.png" alt="National Underground Railroad Network to Freedom" style="width:100%;max-height:120px;object-fit:contain;display:block"></a>
+          <a href="https://pahallowedgrounds.org" style="display:flex;align-items:center;justify-content:center;flex:0 1 340px;max-width:100%;text-decoration:none"><img src="assets/logo-pa-hallowed-grounds.png" alt="Pennsylvania Hallowed Grounds — Preserving Pennsylvania's African American Historic Cemeteries" style="width:100%;max-height:120px;object-fit:contain;display:block"></a>
         </div>
       </div>
     </section>
@@ -503,7 +505,7 @@
                 <span style="font-size:14.5px;line-height:1.65;color:#4A4438;display:{{ n.bioDisplay }}">{{ n.bio }}</span>
                 <span style="font-size:13.5px;line-height:1.6;color:#6E6759;display:{{ n.milDisplay }}">{{ n.mil }}</span>
                 <span style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#8A8371;margin-top:auto;padding-top:12px">{{ n.place }}</span>
-                <a href="{{ n.link }}" target="_blank" rel="noopener" style="display:{{ n.linkDisplay }};font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ goldInk }};text-decoration:none;border-bottom:1px solid {{ gold }};padding-bottom:3px;align-self:flex-start" style-hover="color:#1C1B19;border-color:#1C1B19">Read more →</a>
+                <a href="{{ n.link }}" style="display:{{ n.linkDisplay }};font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ goldInk }};text-decoration:none;border-bottom:1px solid {{ gold }};padding-bottom:3px;align-self:flex-start" style-hover="color:#1C1B19;border-color:#1C1B19">Read more →</a>
               </div>
             </div>
           </sc-for>
@@ -627,7 +629,7 @@
     <section style="background:#F5F4F0">
       <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px) clamp(48px,7vw,88px);display:flex;flex-direction:column;gap:20px">
         <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }};font-weight:600">Support the young authors</span>
-        <a href="https://www.jubileeschool.net/books" target="_blank" rel="noopener" style="display:flex;flex-wrap:wrap;gap:28px 36px;align-items:center;background:#1B1712;color:#F6F4EA;padding:clamp(20px,4vw,28px);text-decoration:none;max-width:1200px;margin:0 auto" style-hover="background:#2B2620">
+        <a href="https://www.jubileeschool.net/books" style="display:flex;flex-wrap:wrap;gap:28px 36px;align-items:center;background:#1B1712;color:#F6F4EA;padding:clamp(20px,4vw,28px);text-decoration:none;max-width:1200px;margin:0 auto" style-hover="background:#2B2620">
           <img src="https://static1.squarespace.com/static/6740c9bd88cd690aa5290aec/6740e2e893bf7b5caab7316a/69860a18d969c935e4d2b599/1788156103842/FINAL_Philly%2BHistory%2BMakers_COVER.jpg?format=750w" alt="Book cover: Celebrating History Makers from Philadelphia's Black Community" style="flex:0 1 240px;width:240px;max-width:100%;aspect-ratio:1;object-fit:cover;display:block;box-shadow:0 10px 24px rgba(0,0,0,0.45);transform:rotate(-2deg);margin:0 auto">
           <div style="flex:1 1 280px;display:flex;flex-direction:column;gap:12px;min-width:0">
             <span style="font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#FFD23F;font-weight:700">Jubilee Voices Publishing House</span>
@@ -653,6 +655,7 @@
         </div>
         <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(34px,7vw,58px);margin:0;line-height:1.08">Grounds Map &amp; Tours</h1>
         <p style="font-size:17px;line-height:1.75;color:{{ dmute }};margin:0;max-width:70ch">Use the interactive map to navigate Eden’s 53 acres, locate historic sections — including the reinterred grounds of Lebanon and Olive Cemeteries — and find the resting places of notable residents.</p>
+        <span onClick="{{ goWalks }}" style="align-self:flex-start;margin-top:8px;cursor:pointer;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ goldHi }};border-bottom:2px solid {{ gold }};padding-bottom:5px" style-hover="color:#F6F4EA">Self-guided walks →</span>
       </div>
     </section>
 
@@ -674,17 +677,8 @@
           <div style="background:{{ dark }};padding:30px;display:flex;flex-direction:column;gap:14px">
             <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ gold }}">Guided Tours</span>
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:24px;font-weight:600;color:#F6F4EA;line-height:1.25">Hear the stories behind the stones.</span>
-            <span style="font-size:14px;line-height:1.7;color:{{ dmute }}">Docent-led walking tours and golf-cart tours for groups, schools, and researchers — by appointment.</span>
+            <span style="font-size:14px;line-height:1.7;color:{{ dmute }}">Docent-led walking tours for groups, schools, and researchers — by appointment.</span>
             <a href="tel:6105838737" style="align-self:flex-start;margin-top:auto;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ gold }};border-bottom:2px solid {{ gold }};padding-bottom:5px;text-decoration:none" style-hover="color:#F6F4EA">Contact us · 610‑583‑8737</a>
-          </div>
-          <div style="border:1px solid #CFCBBF;padding:24px 26px;display:flex;flex-direction:column;gap:14px">
-            <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">Self-Guided Walks</span>
-            <span style="font-size:14px;line-height:1.7;color:#4A4438;text-wrap:pretty">Two phone-friendly self-guided walks. Each stop highlights where you are on the plan and the graves discussed. Print the route sheet to carry along.</span>
-            <div style="display:flex;flex-direction:column;gap:10px">
-              <a href="./tour-short.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1.5px solid #1B1712;color:#1B1712;text-decoration:none;min-height:44px" style-hover="background:#1B1712;color:{{ goldHi }}"><span style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">Short Walk · 4 stops</span><span aria-hidden="true">→</span></a>
-              <a href="./tour-long.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1.5px solid #1B1712;color:#1B1712;text-decoration:none;min-height:44px" style-hover="background:#1B1712;color:{{ goldHi }}"><span style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase">Full Walk · 8 stops</span><span aria-hidden="true">→</span></a>
-            </div>
-            <div style="display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;letter-spacing:0.08em;text-transform:uppercase"><span style="color:#6E6759">Print the walk:</span><a href="./tour-short-print.html" style="color:{{ goldInk }};font-weight:600;text-decoration:none">Short</a><a href="./tour-long-print.html" style="color:{{ goldInk }};font-weight:600;text-decoration:none">Full</a></div>
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:14px">
@@ -692,6 +686,50 @@
             <iframe src="{{ mapSrc }}" style="width:100%;height:100%;border:0;display:block" title="Eden Cemetery interactive grounds map"></iframe>
           </div>
         </div>
+      </div>
+    </section>
+
+  </main>
+  </sc-if>
+
+  <!-- ============ WALKS ============ -->
+  <sc-if value="{{ isWalks }}" hint-placeholder-val="{{ false }}">
+  <main data-screen-label="Self-Guided Walks">
+
+    <section style="background:{{ dark }};color:#F6F4EA">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,8vw,80px) clamp(20px,5vw,40px) clamp(40px,6vw,64px);display:flex;flex-direction:column;gap:24px">
+        <div style="display:flex;align-items:center;gap:14px">
+          <span style="width:36px;height:1px;background:{{ gold }}"></span>
+          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ gold }}">Time Travel — The Past in the Present</span>
+        </div>
+        <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(34px,7vw,58px);margin:0;line-height:1.08">Self-Guided Walks</h1>
+        <p style="font-size:17px;line-height:1.75;color:{{ dmute }};margin:0;max-width:70ch">Walk the grounds at your own pace. Two phone-friendly walks lead you through Eden’s historic sections — including the reinterred grounds of Lebanon and Olive Cemeteries — and the people who rest there.</p>
+        <span onClick="{{ goMap }}" style="align-self:flex-start;margin-top:8px;cursor:pointer;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ goldHi }};border-bottom:2px solid {{ gold }};padding-bottom:5px" style-hover="color:#F6F4EA">Open the interactive map →</span>
+      </div>
+    </section>
+
+    <section style="background:#F5F4F0;color:#1B1712">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(28px,5vw,64px);align-items:center">
+        <div style="display:flex;flex-direction:column;gap:22px">
+          <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">Choose a walk</span>
+          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5vw,42px);margin:0;line-height:1.1;text-wrap:balance">Each stop shows where you are on the plan and tells the stories of the graves around you.</h2>
+          <p style="font-size:16px;line-height:1.75;color:#4A4438;margin:0;max-width:56ch;text-wrap:pretty">Open a walk on your phone before you set out, or print a route sheet to carry along. Take care — the ground can be uneven.</p>
+          <div style="display:flex;flex-direction:column;gap:14px;margin-top:6px">
+            <a href="./tour-short.html" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;background:{{ gold }};color:{{ goldText }};text-decoration:none;min-height:72px" style-hover="background:{{ goldHi }}">
+              <span style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(20px,3vw,24px);font-weight:600;line-height:1.15">Short Walk</span><span style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;opacity:0.85">Four stops · Richard Allen, Lehmann, Lebanon, John Brown</span></span>
+              <span aria-hidden="true" style="font-size:26px;line-height:1">→</span>
+            </a>
+            <a href="./tour-long.html" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;border:1.5px solid #1B1712;color:#1B1712;text-decoration:none;min-height:72px" style-hover="background:#1B1712;color:{{ goldHi }}">
+              <span style="display:flex;flex-direction:column;gap:4px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-size:clamp(20px,3vw,24px);font-weight:600;line-height:1.15">Full Walk</span><span style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;opacity:0.85">Eight stops · adds Celestine, Bowers, and Olive</span></span>
+              <span aria-hidden="true" style="font-size:26px;line-height:1">→</span>
+            </a>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px 18px;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;margin-top:4px"><span style="color:#6E6759">Print a route sheet:</span><a href="./tour-short-print.pdf" download style="color:{{ goldInk }};font-weight:600;text-decoration:none;border-bottom:1px solid {{ goldInk }};padding-bottom:2px">Short walk (PDF)</a><a href="./tour-long-print.pdf" download style="color:{{ goldInk }};font-weight:600;text-decoration:none;border-bottom:1px solid {{ goldInk }};padding-bottom:2px">Full walk (PDF)</a></div>
+        </div>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:12px">
+          <img src="./assets/harmony-monument.jpg" alt="The African Friends to Harmony monument at Eden Cemetery under a blue sky" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 62%;border:1px solid #DDDAD0">
+          <figcaption style="font-size:13px;line-height:1.6;color:#6E6759;margin:0">The African Friends to Harmony monument — 136 burials from West Philadelphia’s oldest African American burial ground (1826–1882), rediscovered in 2018 and reinterred here with dignity.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -718,7 +756,7 @@
         <div style="display:flex;flex-direction:column;gap:14px">
           <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
             <span style="font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#6E6759">Lot locator — use the search box in the map to find a name, section, or lot number.</span>
-            <a href="https://arcg.is/185PKD1" target="_blank" rel="noopener" style="cursor:pointer;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:{{ goldInk }};border:1px solid #DDDAD0;padding:9px 14px;white-space:nowrap" style-hover="background:#1C1B19;border-color:#1C1B19;color:{{ goldHi }}">Open full screen ↗</a>
+            <a href="https://arcg.is/185PKD1" style="cursor:pointer;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:{{ goldInk }};border:1px solid #DDDAD0;padding:9px 14px;white-space:nowrap" style-hover="background:#1C1B19;border-color:#1C1B19;color:{{ goldHi }}">Open full screen ↗</a>
           </div>
           <div style="border:1px solid #DDDAD0;background:#FFFFFF;padding:12px;height:clamp(560px,90vh,780px);box-sizing:border-box">
             <iframe src="https://1838.maps.arcgis.com/apps/instant/sidebar/index.html?appid=c8868bd734c54e39a2475ff723a54e49" style="width:100%;height:100%;border:0;display:block" title="Eden Cemetery lot and grave locator" frameborder="0" allowfullscreen=""></iframe>
@@ -737,7 +775,7 @@
             <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ gold }}">Don’t Know the Lot Number?</span>
             <span style="font-family:'Bricolage Grotesque',sans-serif;font-size:24px;font-weight:600;color:#F6F4EA;line-height:1.25">Look it up on Find a Grave first.</span>
             <span style="font-size:14px;line-height:1.7;color:{{ dmute }}">Search your ancestor on Eden’s Find a Grave listing to get their section and lot number — then come back here and enter it in the map to pinpoint the exact location.</span>
-            <a href="https://www.findagrave.com/cemetery/44744/memorial-search?cemeteryName=Eden+Cemetery&amp;orderby=r&amp;page=1" target="_blank" rel="noopener" style="cursor:pointer;align-self:flex-start;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ gold }};border-bottom:2px solid {{ gold }};padding-bottom:5px" style-hover="color:{{ goldHi }}">Go to Find a Grave ↗</a>
+            <a href="https://www.findagrave.com/cemetery/44744/memorial-search?cemeteryName=Eden+Cemetery&amp;orderby=r&amp;page=1" style="cursor:pointer;align-self:flex-start;font-size:13px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:{{ gold }};border-bottom:2px solid {{ gold }};padding-bottom:5px" style-hover="color:{{ goldHi }}">Go to Find a Grave ↗</a>
           </div>
           <div style="border:1px solid #CFCBBF;padding:24px 26px;display:flex;flex-direction:column;gap:8px">
             <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ goldInk }}">CONTACT US FOR ADDITIONAL ASSISTANCE</span>
@@ -863,45 +901,8 @@
       </div>
     </section>
 
-    <!-- Values -->
-    <section style="background:#EBE9E2;border-bottom:1px solid #DDDAD0">
-      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
-        <div style="display:flex;flex-direction:column;gap:14px;max-width:70ch">
-          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Values</span>
-          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">What guides our care</h2>
-        </div>
-        <div style="display:grid;grid-template-columns:{{ gCards }};gap:1px;background:#DDDAD0;border:1px solid #DDDAD0">
-          <sc-for list="{{ values }}" as="v" hint-placeholder-count="7">
-            <div style="background:#FFFFFF;padding:30px 28px;display:flex;flex-direction:column;gap:12px">
-              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(20px,3vw,24px);color:{{ goldInk }};line-height:1.15">{{ v.title }}</span>
-              <span style="font-size:15px;line-height:1.65;color:#4A4438;text-wrap:pretty">{{ v.text }}</span>
-            </div>
-          </sc-for>
-        </div>
-      </div>
-    </section>
-
-    <!-- Staff -->
-    <section style="background:#F5F4F0;border-bottom:1px solid #DDDAD0">
-      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
-        <div style="display:flex;flex-direction:column;gap:14px;max-width:70ch">
-          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Staff</span>
-          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">The Eden team</h2>
-        </div>
-        <div style="display:grid;grid-template-columns:{{ gCards }};gap:20px">
-          <sc-for list="{{ staff }}" as="s" hint-placeholder-count="8">
-            <div style="background:#FFFFFF;border:1px solid #DDDAD0;padding:26px 26px 24px;display:flex;flex-direction:column;gap:8px">
-              <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:{{ goldInk }}">{{ s.role }}</span>
-              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:22px;line-height:1.15;color:#1B1712">{{ s.name }}</span>
-              <a href="{{ s.mailto }}" style="font-size:14px;color:#4A4438;text-decoration:none;border-bottom:1px solid #DDDAD0;padding-bottom:2px;align-self:flex-start;overflow-wrap:anywhere" style-hover="color:{{ goldInk }};border-color:{{ goldInk }}">{{ s.email }}</a>
-            </div>
-          </sc-for>
-        </div>
-      </div>
-    </section>
-
     <!-- Board -->
-    <section style="background:#EBE9E2;border-top:1px solid #DDDAD0">
+    <section style="background:#EBE9E2;border-bottom:1px solid #DDDAD0">
       <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
         <div style="display:grid;grid-template-columns:{{ gHalf }};gap:clamp(28px,5vw,64px);align-items:center">
           <div style="display:flex;flex-direction:column;gap:14px;max-width:70ch">
@@ -922,6 +923,43 @@
                 <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:21px;line-height:1.15">{{ b.name }}</span>
                 <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:{{ b.accent }}">{{ b.role }}</span>
               </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section style="background:#F5F4F0;border-bottom:1px solid #DDDAD0">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
+        <div style="display:flex;flex-direction:column;gap:14px;max-width:70ch">
+          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Values</span>
+          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">What guides our care</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:{{ gCards }};gap:1px;background:#DDDAD0;border:1px solid #DDDAD0">
+          <sc-for list="{{ values }}" as="v" hint-placeholder-count="7">
+            <div style="background:#FFFFFF;padding:30px 28px;display:flex;flex-direction:column;gap:12px">
+              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(20px,3vw,24px);color:{{ goldInk }};line-height:1.15">{{ v.title }}</span>
+              <span style="font-size:15px;line-height:1.65;color:#4A4438;text-wrap:pretty">{{ v.text }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </section>
+
+    <!-- Staff -->
+    <section style="background:#EBE9E2">
+      <div style="max-width:1280px;margin:0 auto;padding:clamp(56px,9vw,96px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(28px,4vw,44px)">
+        <div style="display:flex;flex-direction:column;gap:14px;max-width:70ch">
+          <span style="font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:{{ goldInk }}">Staff</span>
+          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(28px,5.5vw,44px);margin:0;line-height:1.1">The Eden team</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:{{ gCards }};gap:20px">
+          <sc-for list="{{ staff }}" as="s" hint-placeholder-count="8">
+            <div style="background:#FFFFFF;border:1px solid #DDDAD0;padding:26px 26px 24px;display:flex;flex-direction:column;gap:8px">
+              <span style="font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:{{ goldInk }}">{{ s.role }}</span>
+              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:22px;line-height:1.15;color:#1B1712">{{ s.name }}</span>
+              <a href="{{ s.mailto }}" style="font-size:14px;color:#4A4438;text-decoration:none;border-bottom:1px solid #DDDAD0;padding-bottom:2px;align-self:flex-start;overflow-wrap:anywhere" style-hover="color:{{ goldInk }};border-color:{{ goldInk }}">{{ s.email }}</a>
             </div>
           </sc-for>
         </div>
@@ -1111,7 +1149,7 @@
       <div style="display:flex;flex-direction:column;gap:12px">
         <span style="font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:{{ gold }}">Visit</span>
         <span onClick="{{ goMap }}" style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Grounds Map</span>
-        <span onClick="{{ goMap }}" style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Tours &amp; Events</span>
+        <span onClick="{{ goWalks }}" style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Self-Guided Walks</span>
         <span style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Plan a Visit</span>
         <span style="font-size:14px;cursor:pointer" style-hover="color:{{ goldHi }}">Burial Records &amp; Research</span>
       </div>
@@ -1216,7 +1254,7 @@ class Component extends DCLogic {
 
   componentDidMount() {
     window.__eden = this;
-    this._onHash = () => { const k = location.hash.slice(1); if (['home','history','mission','notables','jubilee','map','lots','services','friends','contact'].includes(k)) this.go(k); };
+    this._onHash = () => { const k = location.hash.slice(1); if (['home','history','mission','notables','jubilee','map','walks','lots','services','friends','contact'].includes(k)) this.go(k); };
     this._onHash(); window.addEventListener('hashchange', this._onHash);
     this.loadPeople();
     this._kmRO = new ResizeObserver(() => this.fitKidsPreview()); this._kmRO.observe(document.body);
@@ -1415,6 +1453,9 @@ class Component extends DCLogic {
       ...this.jubileeVals(),
       isMap: page === 'map',
       mapSrc: './eden-map.html?embed=1' + (this.state.mapFocus ? '&name=' + encodeURIComponent(this.state.mapFocus) : ''),
+      isWalks: page === 'walks',
+      goWalks: () => this.go('walks'),
+      navWalksC: navC('walks'),
       isLots: page === 'lots',
       goLots: () => this.go('lots'),
       navLotsC: navC('lots'),

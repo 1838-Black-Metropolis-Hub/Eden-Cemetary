@@ -645,7 +645,7 @@ export const NOTABLES = [
   "bio": "Opera Singer, Social Reformer. A classical music pioneer and Opera Singer, she was a contralto known for her wide-ranging repertory of art songs, opera arias, and spirituals. She was one of the most celebrated singers of the twentieth century.",
   "mil": "",
   "link": "https://en.wikipedia.org/wiki/Marian_Anderson",
-  "img": ""
+  "img": "assets/marian-anderson.jpg"
  },
  {
   "name": "James Hemmingway",

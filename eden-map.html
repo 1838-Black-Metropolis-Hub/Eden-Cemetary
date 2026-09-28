@@ -18,11 +18,11 @@
   #app{display:flex;flex-direction:column;flex:1 1 auto;min-height:calc(100dvh - 88px)}
   body.embed .sh,body.embed .sf{display:none!important}
 .sh{background:#050400;border-bottom:1px solid #3F3D36;font-family:'Instrument Sans',sans-serif;position:relative;z-index:1200}
-.sh-in{max-width:1280px;margin:0 auto;padding:14px clamp(16px,4vw,40px);display:flex;align-items:center;justify-content:space-between;min-height:88px;gap:14px 32px}
-.sh-logo{flex:0 0 auto;display:flex;flex-direction:column;line-height:1;text-decoration:none}
+.sh-in{max-width:1280px;margin:0 auto;padding:14px clamp(16px,4vw,40px);display:flex;align-items:center;justify-content:space-between;min-height:88px;gap:14px clamp(12px,3vw,32px);min-width:0}
+.sh-logo{flex:0 1 auto;min-width:0;display:flex;flex-direction:column;line-height:1;text-decoration:none}
 .sh-name{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(23px,4vw,30px);letter-spacing:.04em;color:#F6F4EA}
 .sh-name b{color:#E9AD16;font-weight:600}
-.sh-tag{white-space:nowrap;font-size:10.5px;letter-spacing:.32em;color:#9C988C;margin-top:5px;text-transform:uppercase}
+.sh-tag{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:10.5px;letter-spacing:.32em;color:#9C988C;margin-top:5px;text-transform:uppercase}
 .sh-nav{display:flex;align-items:center;gap:12px clamp(14px,2.5vw,34px);flex-wrap:wrap}
 .sh-nav a,.sh-mnav a{white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:.06em;color:#CFCCC4;text-decoration:none}
 .sh-nav a:hover,.sh-mnav a:hover,.sh a.on{color:#E9AD16}
@@ -35,7 +35,8 @@
 .sh-mnav{position:absolute;left:0;right:0;top:100%;display:flex;flex-direction:column;padding:6px clamp(16px,4vw,40px) 24px;background:#1C1B19;border-top:1px solid #3F3D36}
 .sh-mnav a{font-size:17px;letter-spacing:.04em;padding:14px 0;border-bottom:1px solid #3F3D36}
 .sh-mnav a.sh-cta{margin-top:10px;padding:16px 22px;border:0}
-@media(max-width:1080px){.sh-nav{display:none}.sh-menu{display:block}}
+@media(max-width:1080px){.sh-nav{display:none}.sh-menu{display:block;flex:0 0 auto}}
+@media(max-width:400px){.sh-tag{display:none}.sh-name{font-size:22px}}
 .sf{background:#1C1B19;color:#CFCCC4;border-top:1px solid #3F3D36;font-family:'Instrument Sans',sans-serif}
 .sf-in{max-width:1280px;margin:0 auto;padding:clamp(44px,7vw,72px) clamp(20px,5vw,40px) 40px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px 48px}
 .sf-col{display:flex;flex-direction:column;gap:12px;font-size:14px}
@@ -133,7 +134,7 @@
   body.tracing #app{width:calc(100% - 290px)}
   body.tracing .leaflet-container{cursor:crosshair}
   .note{position:absolute;bottom:8px;left:10px;max-width:60%;z-index:1000;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);background:rgba(245,244,240,.9);border:1px solid var(--line);padding:5px 10px;border-radius:0;pointer-events:none}
-  body.embed header{display:none}
+  body.embed #app>header{display:none}
   #info{display:block;position:relative;background:var(--panel);border-top:1px solid var(--line)}
   #infoEmpty{display:none;padding:18px 16px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
   #infoX{position:absolute;top:12px;right:12px;width:34px;height:34px;border:1px solid var(--line);background:var(--panel);color:var(--mute);font-size:14px;cursor:pointer}
@@ -189,11 +190,11 @@
 </style>
 </head>
 <body>
-<header class="sh noprint"><div class="sh-in"><a class="sh-logo" href="./index.html"><span class="sh-name">EDEN <b>CEMETERY</b></span><span class="sh-tag">Historic · Est. 1902 · Collingdale, PA</span></a><nav class="sh-nav"><a href="./index.html#home">Home</a><a href="./index.html#history">History</a><a href="./index.html#mission">Mission &amp; Staff</a><a href="./index.html#notables">Notable Residents</a><a href="./index.html#jubilee">For Kids</a><a href="./index.html#map" class="on">Map &amp; Tours</a><a href="./index.html#lots">Find a Lot</a><a href="./index.html#services">Cemetery Services</a><a href="./index.html#friends">Friends of Eden</a><a class="sh-cta" href="./index.html#contact">Contact Us</a></nav><details class="sh-menu"><summary><i><b></b></i><span>Menu</span></summary><nav class="sh-mnav"><a href="./index.html#home">Home</a><a href="./index.html#history">History</a><a href="./index.html#mission">Mission &amp; Staff</a><a href="./index.html#notables">Notable Residents</a><a href="./index.html#jubilee">For Kids</a><a href="./index.html#map" class="on">Map &amp; Tours</a><a href="./index.html#lots">Find a Lot</a><a href="./index.html#services">Cemetery Services</a><a href="./index.html#friends">Friends of Eden</a><a class="sh-cta" href="./index.html#contact">Contact Us</a></nav></details></div></header>
+<header class="sh noprint"><div class="sh-in"><a class="sh-logo" href="./index.html"><span class="sh-name">EDEN <b>CEMETERY</b></span><span class="sh-tag">Historic · Est. 1902 · Collingdale, PA</span></a><nav class="sh-nav"><a href="./index.html#home">Home</a><a href="./index.html#history">History</a><a href="./index.html#mission">Mission &amp; Staff</a><a href="./index.html#notables">Notable Residents</a><a href="./index.html#jubilee">For Kids</a><a href="./index.html#map" class="on">Map &amp; Tours</a><a href="./index.html#walks">Walks</a><a href="./index.html#lots">Find a Lot</a><a href="./index.html#services">Cemetery Services</a><a href="./index.html#friends">Friends of Eden</a><a class="sh-cta" href="./index.html#contact">Contact Us</a></nav><details class="sh-menu"><summary><i><b></b></i><span>Menu</span></summary><nav class="sh-mnav"><a href="./index.html#home">Home</a><a href="./index.html#history">History</a><a href="./index.html#mission">Mission &amp; Staff</a><a href="./index.html#notables">Notable Residents</a><a href="./index.html#jubilee">For Kids</a><a href="./index.html#map" class="on">Map &amp; Tours</a><a href="./index.html#walks">Self-Guided Walks</a><a href="./index.html#lots">Find a Lot</a><a href="./index.html#services">Cemetery Services</a><a href="./index.html#friends">Friends of Eden</a><a class="sh-cta" href="./index.html#contact">Contact Us</a></nav></details></div></header>
 <div id="app">
 <header>
   <span class="sub">Tap a dot on the map to read about the person buried there.</span>
-  <span class="tours"><a href="./tour-short.html">Short walk</a><a href="./tour-long.html">Full walk</a></span>
+  <span class="tours"><a href="./tour-short.html" target="_top">Short walk</a><a href="./tour-long.html" target="_top">Full walk</a></span>
 </header>
 <div id="bar">
   <input id="q" type="search" placeholder="Search a name… e.g. William Still">
