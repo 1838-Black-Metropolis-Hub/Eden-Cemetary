@@ -94,6 +94,7 @@
 .sh-name{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(23px,4vw,30px);letter-spacing:.04em;color:#F6F4EA}
 .sh-name b{color:#E9AD16;font-weight:600}
 .sh-tag{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:10.5px;letter-spacing:.32em;color:#9C988C;margin-top:5px;text-transform:uppercase}
+@media(max-width:640px){.sh-tag{white-space:normal;overflow:visible;text-overflow:clip;font-size:9.5px;letter-spacing:.22em;line-height:1.5;max-width:22ch}}
 .sh-nav{display:flex;align-items:center;gap:12px clamp(14px,2.5vw,34px);flex-wrap:wrap}
 .sh-nav a,.sh-mnav a{white-space:nowrap;font-size:14px;font-weight:500;letter-spacing:.06em;color:#CFCCC4;text-decoration:none}
 .sh-nav a:hover,.sh-mnav a:hover,.sh a.on{color:#E9AD16}
@@ -107,7 +108,7 @@
 .sh-mnav a{font-size:17px;letter-spacing:.04em;padding:14px 0;border-bottom:1px solid #3F3D36}
 .sh-mnav a.sh-cta{margin-top:10px;padding:16px 22px;border:0}
 @media(max-width:1080px){.sh-nav{display:none}.sh-menu{display:block;flex:0 0 auto}}
-@media(max-width:400px){.sh-tag{display:none}.sh-name{font-size:22px}}
+@media(max-width:400px){.sh-tag{font-size:9px;letter-spacing:.18em}.sh-name{font-size:22px}}
 .sf{background:#1C1B19;color:#CFCCC4;border-top:1px solid #3F3D36;font-family:'Instrument Sans',sans-serif}
 .sf-in{max-width:1280px;margin:0 auto;padding:clamp(44px,7vw,72px) clamp(20px,5vw,40px) 40px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px 48px}
 .sf-col{display:flex;flex-direction:column;gap:12px;font-size:14px}
@@ -126,7 +127,7 @@
 <div id="app">
 <header id="tourbar">
   <span class="sub">Full Walk</span>
-  <nav><a href="./tour-short.html">Short walk →</a><a href="./tour-long-print.pdf" download>Print the walk (PDF)</a></nav>
+  <nav><a href="./tour-short.html">Short walk →</a><a href="./tour-long-print.html">Print the walk</a></nav>
 </header>
 <div id="prog"><div class="row"><span class="stop" id="stopName"></span><span class="cnt" id="stopCnt"></span></div><div id="segs"></div></div>
 <div id="nav">
